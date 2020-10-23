@@ -1,11 +1,15 @@
-import "package:nyxx/nyxx.dart" show CachelessGuildChannel, ClientOptions, DiscordColor, EmbedBuilder, EmbedFooterBuilder, GuildTextChannel, MessageChannel, Nyxx, Snowflake;
-import "package:nyxx_commander/commander.dart" show CommandContext, CommandGroup, Commander;
-import 'package:dart_dice_parser/dart_dice_parser.dart';
+import 'package:nyxx/nyxx.dart' show CachelessGuildChannel, ClientOptions, DiscordColor, EmbedBuilder, EmbedFooterBuilder, GuildTextChannel, MessageChannel, Nyxx, Snowflake;
+import 'package:nyxx_commander/commander.dart' show CommandContext, CommandGroup, Commander;
 import 'package:toml/loader/fs.dart';
 import 'dart:async';
-import "dart:math" show Random;
-import "dart:io" show Process, ProcessInfo, pid;
-import "utils.dart" as utils;
+import 'dart:math' show Random;
+import 'dart:io' show Process, ProcessInfo, pid;
+import 'utils.dart' as utils;
+import 'wod_scraper.dart'  as wod_scraper;
+
+
+var ownerID;
+
 
 
 Future main(List<String> arguments)  async {
@@ -14,21 +18,41 @@ Future main(List<String> arguments)  async {
   try {
     cfg = await loadConfig('config.toml');
     print(cfg['Bot']['ID']);
+    ownerID = cfg['Owner']['ID'];
 
     final bot = Nyxx(cfg['Bot']['Token']!);
 
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
-      ..registerCommandGroup(commandGroup(name: 'Dice'))
-        ..registerCommand('roll', rollCommand)
-      ..registerCommand("info", infoCommand)
-      ..registerCommand("ping", pingCommand);
+      ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
+        ..registerSubCommand('shutdown', shutdownCommand))
+      ..registerCommandGroup(CommandGroup(name:'wodcodex')
+        ..registerSubCommand('embed', embedCommand))
+      ..registerCommand('help', helpCommand)
+      ..registerCommand('info', infoCommand)
+      ..registerCommand('ping', pingCommand);
 
   } catch(e) {
     print(e);
   }
   return cfg;
 
+}
+
+
+Future<void> helpCommand(CommandContext ctx, String content) async {
+  // Assign method to variable for shorter name
+  const helpGen = utils.helpCommandGen;
+
+  // Write zero-width character to skip first line where nick is
+  final buffer = StringBuffer("‎\n");
+
+  buffer.write(helpGen("info", "sends basic info about bot"));
+  buffer.write(helpGen("ping", "sends current bot latency"));
+  buffer.write(helpGen("help", "this command"));
+  buffer.write(helpGen("shutdown", "Shuts down bot"));
+
+  await ctx.reply(content: buffer.toString());
 }
 
 Future<void> pingCommand(CommandContext ctx, String content) async {
@@ -95,7 +119,20 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
   await ctx.reply(embed: embed);
 }
 
-Future<void> rollCommand(CommandContext ctx, String content) async {
-  var diceExpression = content;
-  await ctx.reply(content: 'Rolling: ${DiceParser().roll(diceExpression)}')
+Future<void> shutdownCommand(CommandContext ctx, String content) async {
+  Process.killPid(pid);
 }
+
+Future<void> embedCommand(CommandContext ctx, String content) async {
+  print(await wod_scraper.initiate());
+}
+
+Future<bool> checkForAdmin(CommandContext context) async {
+
+  if(ownerID != null) {
+    return context.author!.id == ownerID;
+  }
+
+  return false;
+}
+

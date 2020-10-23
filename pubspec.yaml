@@ -13,6 +13,8 @@ dependencies:
   dotenv: ^2.0.0
   toml: ^0.6.0
   dart_dice_parser: ^2.0.0
+  html: ^0.13.3+3
+  http: ^0.12.0
 
 dev_dependencies:
   pedantic: ^1.9.0
