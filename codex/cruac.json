@@ -1,0 +1,206 @@
+{
+  "ban_of_the_spiteful_bastard": {
+    "rite": "Ban of the Spiteful Bastard",
+    "target": "6",
+    "opposition": "- Composure",
+    "description": "Revenants only. Curse your sire to rise without Vitae for your Potency in nights.",
+    "source": "HD 78"
+  },
+  "mantle_of_amorous_fire": {
+    "rite": "Mantle of Amorous Fire",
+    "target": "5",
+    "opposition": "—",
+    "description": ",",
+    "source": "Dance to exhaustion. Add Crúac as a Presence bonus for the night.",
+    "undefined": "SotC 184"
+  },
+  "pangs_of_proserpina": {
+    "rite": "Pangs of Proserpina",
+    "target": "6",
+    "opposition": "vs Composure + Tolerance",
+    "description": "A victim up to a mile away suffers feelings of intense hunger, provoking frenzy in Kindred.",
+    "source": "VTR 2e 152"
+  },
+  "pool_of_forbidden_truths": {
+    "rite": "Pool of Forbidden Truths",
+    "target": "5",
+    "opposition": "—",
+    "description": "The caster gains the Primeval Truths Condition and experiences a vision. Roll Wits + Investigation + Crúac to interpret.",
+    "source": "SotC 184"
+  },
+  "rigor_mortis": {
+    "rite": "Rigor Mortis",
+    "target": "5",
+    "opposition": "- Composure",
+    "description": "A vampiric victim within a mile stiffens and suffers a -3 Physical penalty.",
+    "source": "VTR 2e 152"
+  },
+  "cheval": {
+    "rite": "Cheval",
+    "target": "5",
+    "opposition": "- Composure",
+    "description": "Borrow a touched subject's sight and hearing for the rest of the night.",
+    "source": "VTR 2e 152"
+  },
+  "mantle_of_the_beast’s_breath": {
+    "rite": "Mantle of the Beast’s Breath",
+    "target": "5",
+    "opposition": "—",
+    "description": "Dance to exhaustion. Gain the Raptured Condition and add Crúac as a bonus to ride the wave for the night.",
+    "source": "SotC 184"
+  },
+  "hydra's_vitae": {
+    "rite": "Hydra's Vitae",
+    "target": "5",
+    "opposition": "—",
+    "description": "Transform blood in your system into a poison causing lethal damage, yielding no Vitae when drank.",
+    "source": "VTR 2e 152"
+  },
+  "shed_the_virulent_bowels": {
+    "rite": "Shed the Virulent Bowels",
+    "target": "6",
+    "opposition": "vs Stamina + Tolerance",
+    "description": "Use a lock of hair or sympathetic link to hang a curse over a living victim for a month. Trigger the curse to cause enough lethal damage to fill the victim's Health.",
+    "source": "SotC 185"
+  },
+  "curse_of_aphrodite’s_favor": {
+    "rite": "Curse of Aphrodite’s Favor",
+    "target": "6",
+    "opposition": "vs Composure + Tolerance",
+    "description": "Concoct enough potion for three drops to feed a victim over three nights, inflicting a Vinculum to another chosen subject.",
+    "source": "SotC 185"
+  },
+  "curse_of_the_beloved_toy": {
+    "rite": "Curse of the Beloved Toy",
+    "target": "6",
+    "opposition": "—",
+    "description": "Slay a victim and trap their soul in a keepsake of theirs, rendering it a cursed item which expends the sorcerous Vitae to plague owners with dramatic failures.",
+    "source": "SotC 185"
+  },
+  "deflection_of_wooden_doom": {
+    "rite": "Deflection of Wooden Doom",
+    "target": "6",
+    "opposition": "—",
+    "description": "Caster becomes immune to staking for one night.",
+    "source": "VTR 2e 153"
+  },
+  "donning_the_beast’s_flesh": {
+    "rite": "Donning the Beast’s Flesh",
+    "target": "7",
+    "opposition": "—",
+    "description": "Flay a beast and craft its skin into a garment. Spend Vitae while wearing the skin to approximate the beast's form.",
+    "source": "SotC 184"
+  },
+  "mantle_of_the_glorious_dervish": {
+    "rite": "Mantle of the Glorious Dervish",
+    "target": "5",
+    "opposition": "—",
+    "description": "Dance to exhaustion. Until sunrise, the caster gains a point of armor against all attacks, cannot be ambushed or surprised, and deals an extra point of damage when striking.",
+    "source": "SotC 185"
+  },
+  "touch_of_the_morrigan": {
+    "rite": "Touch of the Morrigan",
+    "target": "6",
+    "opposition": "—",
+    "description": "Prepare a deadly touch to inflict Potency in lethal damage within the night.",
+    "source": "VTR 2e 153"
+  },
+  "blood_blight": {
+    "rite": "Blood Blight",
+    "target": "8",
+    "opposition": "vs Stamina + Tolerance",
+    "description": "Inflict Potency in lethal damage or Vitae loss by scouring blood, often provoking frenzy.",
+    "source": "VTR 2e 153"
+  },
+  "blood_price": {
+    "rite": "Blood Price",
+    "target": "8",
+    "opposition": "vs Composure + Tolerance",
+    "description": "Steal up to Potency in ingested Vitae from a present vampire or ghoul victim for the night.",
+    "source": "VTR 2e 153"
+  },
+  "bounty_of_the_storm": {
+    "rite": "Bounty of the Storm",
+    "target": "10",
+    "opposition": "—",
+    "description": "Consume a precious item to prepare a storm that awaits a crowd to strike, dealing your Crúac in bashing damage to the victim and slaying a third of the rest, leaving behind massive wealth. Risk detachment at Humanity 2.",
+    "source": "SotC 185"
+  },
+  "feeding_the_crone": {
+    "rite": "Feeding the Crone",
+    "target": "10",
+    "opposition": "—",
+    "description": "Deal aggravated damage with your bite, but ingest no Vitae, until sunrise. End early by spending Vitae.",
+    "source": "VTR 2e 153"
+  },
+  "gorgon’s_gaze": {
+    "rite": "Gorgon’s Gaze",
+    "target": "7",
+    "opposition": "—",
+    "description": "Roll Presence + Occult + Crúac – Stamina against the first person to see your eyes, petrifying a fifth of their body per success. Petrified Kindred may heal petrifications as severe damage.",
+    "source": "SotC 185"
+  },
+  "manananggal's_working": {
+    "rite": "Manananggal's Working",
+    "target": "8",
+    "opposition": "—",
+    "description": "Elder rite. Dismember yourself, willfully animating the severed body parts independently for the night.",
+    "source": "Thou 78"
+  },
+  "mantle_of_the_predator_goddess": {
+    "rite": "Mantle of the Predator Goddess",
+    "target": "8",
+    "opposition": "—",
+    "description": "Dance to exhaustion. Add Crúac as a feeding bonus and as bonus Herd dots. Any character fed from gains the Raptured Condition.",
+    "source": "SotC 186"
+  },
+  "quicken_the_withered_womb": {
+    "rite": "Quicken the Withered Womb",
+    "target": "8",
+    "opposition": "—",
+    "description": "Guarantee fertile conception when coupling for the night.",
+    "source": "HD 14"
+  },
+  "willful_vitae": {
+    "rite": "Willful Vitae",
+    "target": "7",
+    "opposition": "—",
+    "description": "Prevent the onset of blood addiction or the Vinculum for the night.",
+    "source": "VTR 2e 153"
+  },
+  "birthing_the_god": {
+    "rite": "Birthing the God",
+    "target": "15",
+    "opposition": "—",
+    "description": "Gather body parts to violently birth an undead flesh-eating god with Size a fifth of the Vitae used, Blood Potency a third of the Vitae, and one Skill rating inherited from each celebrant. Spend used Vitae to assign the god dots of Attributes and Disciplines.",
+    "source": "SotC 186"
+  },
+  "denying_hades": {
+    "rite": "Denying Hades",
+    "target": "8",
+    "opposition": "—",
+    "description": "Disgorge Vitae and suffer a point of aggravated damage to trap a deceased spirit in its days-old body, hung between life and death.",
+    "source": "SotC 186"
+  },
+  "gwydion's_curse": {
+    "rite": "Gwydion's Curse",
+    "target": "10",
+    "opposition": "—",
+    "description": "Elder rite. Animate plants and trees for a yard per Potency for the night, which roll your Blood Potency to attack and can spend the rite's Vitae to heal themselves.",
+    "source": "Thou 78"
+  },
+  "mantle_of_the_crone": {
+    "rite": "Mantle of the Crone",
+    "target": "10",
+    "opposition": "—",
+    "description": "Dance to exhaustion. For the night, inflict Primeval Truths with your visage, and aggravated damage with your touch. Spend Willpower to transmute objects into animals temporarily.",
+    "source": "SotC 186"
+  },
+  "scapegoat": {
+    "rite": "Scapegoat",
+    "target": "12",
+    "opposition": "- Resolve",
+    "description": "Elder rite. Feed the ritual Vitae to a mortal vessel. For one night, the mortal suffers any breaking points or inured banes, not you.",
+    "source": "Thou 78"
+  }
+}

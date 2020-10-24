@@ -1,4 +1,4 @@
-import 'package:wodbot/wodbot.dart';
+import 'package:Cerys/cerys.dart';
 import 'package:test/test.dart';
 
 void main() {

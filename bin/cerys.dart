@@ -5,9 +5,8 @@ import 'package:toml/loader/fs.dart';
 import 'dart:async';
 import 'dart:math' show Random;
 import 'dart:io' show Process, ProcessInfo, pid, File;
-import 'dart:convert';
 import 'utils.dart' as utils;
-import 'package:html_unescape/html_unescape.dart';
+import 'codex.dart' as codex;
 
 
 var ownerID;
@@ -27,7 +26,10 @@ Future main(List<String> arguments) async {
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
         ..registerSubCommand('shutdown', shutdownCommand))
       ..registerCommandGroup(CommandGroup(name: 'codex')
-        ..registerSubCommand('embed', embedCommand))
+        ..registerSubCommand('embed', codex.embedCommand)
+        ..registerSubCommand('exploit', codex.exploitCommand)
+        ..registerSubCommand('cruac', codex.cruacCommand)
+        ..registerSubCommand('demon_forms', codex.demonFormsCommand))
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand);
@@ -138,39 +140,6 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
 
 Future<void> shutdownCommand(CommandContext ctx, String content) async {
   Process.killPid(pid);
-}
-
-Future<void> embedCommand(CommandContext ctx, String content) async {
-  final color = DiscordColor.fromRgb(
-      Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
-
-  var unescape = HtmlUnescape();
-  Map wodembed = json.decode(await File('codex/embed.json').readAsString());
-  var keyword = htmlEscape.convert(content.replaceAll('..codex embed ', '').toLowerCase().replaceAll(' ', '_'));
-  print(keyword);
-  var obj = wodembed[keyword];
-  obj['Name'] = unescape.convert(obj['Name']);
-  print(obj);
-
- var embed = EmbedBuilder()
-    ..addAuthor((author) {
-      author.name = unescape.convert(obj['Name']);
-      author.iconUrl = 'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
-      author.url = 'https://github.com/mediamagnet/cerys';
-    })
-    ..addFooter((footer) {
-      footer.text =
-      'Cerys v0.0.1';
-    })
-    ..color = color
-    // ..addField(name: 'Name:', content: unescape.convert(obj['Name']))
-    ..addField(name: 'Description:', content: obj['Description'])
-    ..addField(name: 'Pool:', content: obj['Pool'], inline: true)
-    ..addField(name: 'Type:', content: obj['Type'], inline: true)
-    ..addField(name: 'Source', content: obj['Source']);
-
-  await ctx.message.delete();
-  await ctx.reply(embed: embed);
 }
 
 Future<bool> checkForAdmin(CommandContext context) async {

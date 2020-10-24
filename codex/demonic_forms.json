@@ -1,0 +1,238 @@
+{
+  "advanced_optics": {
+    "modification": "Advanced Optics",
+    "appearance": "Glass lenses replace eyes.",
+    "system": "Spend a turn focusing and gain a +3 equipment bonus on any rolls that would benefit from magnification (Eg, Investigation, Larceny or Science). Blind to anything not in field of view.",
+    "source": "FoH 121"
+  },
+  "armored_plates": {
+    "modification": "Armored Plates",
+    "appearance": "Well hinged armored plates.",
+    "system": "Armor 3/2, Defense/Speed -1.",
+    "source": "DTD 196"
+  },
+  "blade_hand": {
+    "modification": "Blade Hand",
+    "appearance": "An integrated transforming body weapon.",
+    "system": "Reflexively summon or dismiss the blade hand. 4L rating weapon, initative penalty -3.",
+    "source": "DTD 197"
+  },
+  "claws_and_fangs": {
+    "modification": "Claws and Fangs",
+    "appearance": "Metal or bone claws, needles, etc.",
+    "system": "2L rating weapon, no initiative penalty. Can be used to grapple.",
+    "source": "DTD 197"
+  },
+  "component_indicators": {
+    "modification": "Component Indicators",
+    "appearance": "Pale blue rubbery covered with pores and bumps.",
+    "system": "Perform comprehensive chemical testing by touching a sample for a minute. Identify things like DNA, molecular components, etc etc. Can interpret the data if necessary with an Intelligence + Science roll.",
+    "source": "FoH 122"
+  },
+  "detachable_limbs": {
+    "modification": "Detachable Limbs",
+    "appearance": "Gaps between joints. Leaks oil when detached.",
+    "system": "Detach any individual limb at each joint, including the torso. Each limb is under full control and can act independently. Can spend 1 Aether to instantly regrow a limb (torso counts as two) destroying the originally detached limb. Can reattach the detached limbs as an instant action, as well.",
+    "source": "FoH 122"
+  },
+  "electrical_sight": {
+    "modification": "Electrical Sight",
+    "appearance": "Staticky pupils.",
+    "system": "See electrical signals and currents. Roll Intelligence + Composure to zero in on, interpret and eavesdrop on a given signal.",
+    "source": "DTD 197"
+  },
+  "emp_field": {
+    "modification": "EMP Field",
+    "appearance": "Wires and circuits and a metallic sheen.",
+    "system": "Spend an instant action and one Aether to roll Intelligence + Primum. Short out and disable all electrical devices within 5 feet per success.",
+    "source": "DTD 197"
+  },
+  "fast_attack": {
+    "modification": "Fast Attack",
+    "appearance": "Red swirling tattoos over hands and arms.",
+    "system": "+2 initiative. After successfully striking someone, as long as the demon continues to attack that person she may reset her initiative to act before her target. Initiative reverts when no longer fighting that specific person.",
+    "source": "DTD 197"
+  },
+  "huge_size": {
+    "modification": "Huge Size",
+    "appearance": "Huge size.",
+    "system": "+4 size.",
+    "source": "DTD 197"
+  },
+  "inhuman_intelligence": {
+    "modification": "Inhuman Intelligence",
+    "appearance": "Visible alterations to head and cranium.",
+    "system": "+2 to Intelligence rolls.",
+    "source": "DTD 197"
+  },
+  "inhuman_strength": {
+    "modification": "Inhuman Strength",
+    "appearance": "Bulging or unnatural steel muscles.",
+    "system": "+2 to Strength rolls.",
+    "source": "DTD 198"
+  },
+  "inhuman_reflexes": {
+    "modification": "Inhuman Reflexes",
+    "appearance": "Mechanical hinges or actuator pistons.",
+    "system": "+2 to Dexterity rolls.",
+    "source": "DTD 198"
+  },
+  "lighting": {
+    "modification": "Lighting",
+    "appearance": "Torches, LEDs or other sources of light in the body.",
+    "system": "Eliminates any penalties from darkness when active. Can blind a target (causing Blindness tilt) as an instant action unless resisted by Wits + Composure - Primum.",
+    "source": "FoH 123"
+  },
+  "limb_retractor": {
+    "modification": "Limb Retractor",
+    "appearance": "Slight increase in size of withdrawn area. Missing limbs look kinda like lumps, like the navel.",
+    "system": "Reflexively draw Arms, Legs or the head into the Abdomen, protecting it from outside harm. Can pull objects of Size 2 or less into the body to be hidden as well.",
+    "source": "FoH 123"
+  },
+  "low_density": {
+    "modification": "Low Density",
+    "appearance": "Feet look spidery or like a bundle of roots.",
+    "system": "Walk on sand, snow or liquids without difficulty. Ignore \"Flooded\" and \"Ice\" tilts. May still require Dexterity + Athletics checks in very extreme conditions.",
+    "source": "FoH 123"
+  },
+  "mental_resistance": {
+    "modification": "Mental Resistance",
+    "appearance": "Faint blue and icy to the touch.",
+    "system": "+2 to resist supernatural powers.",
+    "source": "DTD 198"
+  },
+  "nauseating_musk": {
+    "modification": "Nauseating Musk",
+    "appearance": "Blood-coloured sweat droplets all over skin. Odour of garbage within about 10 yards.",
+    "system": "As an instant action, inflicts the \"Sick\" tilt on any creature within 10 yards which have a sense of smell.",
+    "source": "FoH 123"
+  },
+  "night_vision": {
+    "modification": "Night Vision",
+    "appearance": "Pupils fill with green light or fluid.",
+    "system": "See in the dark as if broad daylight, and +2 to Perception rolls.",
+    "source": "DTD 198"
+  },
+  "olfactory_enhancements": {
+    "modification": "Olfactory Enhancements",
+    "appearance": "Instead of a nose, has a wire mesh with flashing olfactory detectors behind it.",
+    "system": "+3 bonus to Wits checks that benefit from a sharp sense of smell. \"Red herring\" scents do not deceive or inconvenience. Can track a scent with a Wits + Survival roll.",
+    "source": "FoH 123"
+  },
+  "radio_suite": {
+    "modification": "Radio Suite",
+    "appearance": "A radio-type device is embedded into the skin, as well as aerials with the appearance of veins.",
+    "system": "Mastery over radio signals. Tune in and listen to all broadcasts with perfect clarity, interrupt any radio frequency or broadcast either voice or anything the Demon can hear over the frequency.",
+    "source": "FoH 124"
+  },
+  "resistors": {
+    "modification": "Resistors",
+    "appearance": "Glass and ceramic resistors connected by copper wiring adorn the body.",
+    "system": "Ignore the first source of damage suffered. The resistors shatter and are not restored until the Demon's health pool is completely refilled.",
+    "source": "FoH 124"
+  },
+  "rivet_arm": {
+    "modification": "Rivet Arm",
+    "appearance": "An entire arm becomes a large projectile tool.",
+    "system": "Reflexively summon or dismiss the rivet arm. Gun rolls Wits + Firearms to attack, with a 3L damage rating, no initiative penalty, and infinite ammunition and clip size. +2 to relevant building projects.",
+    "source": "DTD 198"
+  },
+  "sense_the_angelic": {
+    "modification": "Sense the Angelic",
+    "appearance": "Hair-tendrils like copper wire.",
+    "system": "Roll Wits + Investigation to notice the influence of an angelic Numen within the past 24 hours. If the effect has been encountered before, identify it as such.",
+    "source": "DTD 198"
+  },
+  "slippery_body": {
+    "modification": "Slippery Body",
+    "appearance": "Oily residue.",
+    "system": "+3 to Defense against grapples. +3 to escape a grapple. Can squeeze through tight spaces as if -1 size.",
+    "source": "DTD 198"
+  },
+  "sonic_acuity": {
+    "modification": "Sonic Acuity",
+    "appearance": "Altered or filtered ears.",
+    "system": "Hear sounds of all frequencies and volumes without disorientation or pain. Can concentrate to hear sounds through solid walls. +3 to Perception via hearing. Cannot be surprised or Deafened.",
+    "source": "DTD 199"
+  },
+  "spurs": {
+    "modification": "Spurs",
+    "appearance": "Spurs over the demon's ankles.",
+    "system": "Climb vertical surfaces. +3 to climbing. Climb 20 feet instead of 10. 1L rating weapon, no initiative penalty.",
+    "source": "DTD 199"
+  },
+  "steel_frame": {
+    "modification": "Steel Frame",
+    "appearance": "Steel rivets stick out of the skin, ringing vital areas and joints.",
+    "system": "The Demon's bones cannot be broken unless the source can bend steel (Durability 3, Size 0-2, Structure 3-5). Ignore \"Arm Wrack\", \"Leg Wrack\" tilts and wound penalties. Always have access to brass knuckles due to rivets on the fist (0L, ±0 Initiative).",
+    "source": "FoH 124"
+  },
+  "tough_as_stone": {
+    "modification": "Tough as Stone",
+    "appearance": "Skin like stone.",
+    "system": "Spend one Aether to downgrade all damage from an attack by one (aggravated to lethal, lethal to bashing). Cannot stack on one attack, but can be used against multiple attacks in the same round.",
+    "source": "DTD 199"
+  },
+  "unyielding_vice": {
+    "modification": "Unyielding Vice",
+    "appearance": "Pneumatic pumps, hoses and pistons adorn the hand.",
+    "system": "The demon's grip is near-unbreakable and can grasp onto anything that would not physically destroy the hand. Gain +5 in grapples as well.",
+    "source": "FoH 124"
+  },
+  "casts_no_reflection": {
+    "modification": "Casts No Reflection",
+    "appearance": "Body distorts light and is hard to process visually.",
+    "system": "Visage is not captured by reflective surfaces or recording media.",
+    "source": "DTG 40",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "conjuration": {
+    "modification": "Conjuration",
+    "appearance": "Pseudo-magnetic mesh on palms of hands.",
+    "system": "Apply the benefits of the Quick Draw and Sleight of Hand Merits through teleporting objects short distances.",
+    "source": "DTG 40",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "dead_reckoning": {
+    "modification": "Dead Reckoning",
+    "appearance": "Translucent HUD eyelids.",
+    "system": "Apply the rote quality to Streetwise and Survival actions to self-orient.",
+    "source": "DTG 40",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "ghost_sight": {
+    "modification": "Ghost Sight",
+    "appearance": "Extra pair of pupilless eyes.",
+    "system": "Perceive ghosts and spirits in Twilight.",
+    "source": "DTG 40",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "multiple_eyes": {
+    "modification": "Multiple Eyes",
+    "appearance": "Covered in eyes or lenses.",
+    "system": "Ignore the Blindness Tilt and Blind Condition except when they represent total lack of visibility in the demon's surroundings. +2 to Perception rolls using vision.",
+    "source": "DTG 41",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "quills": {
+    "modification": "Quills",
+    "appearance": "Spiky.",
+    "system": "Armor +1/0. Inflict 1L damage when struck by a Brawl or Melee attack that did not roll an exceptional success.",
+    "source": "DTG 41",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "relentless": {
+    "modification": "Relentless",
+    "appearance": "Geodesic metal torso.",
+    "system": "Ignore suffocation, hunger, thirst, tiring and fatigue.",
+    "source": "DTG 41",
+    "type": "Demon Translation Guide Modifications"
+  },
+  "weather_sense": {
+    "modification": "Weather Sense",
+    "appearance": "Head-mounted array of microwave domes.",
+    "system": "Detect current or future weather within (10×Primum) miles.",
+    "source": "DTG 42",
+    "type": "Demon Translation Guide Modifications"
+  }
+}
