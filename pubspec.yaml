@@ -1,4 +1,4 @@
-name: wodbot
+name: Cerys
 description: A sample command-line application.
 # version: 1.0.0
 # homepage: https://www.example.com
@@ -15,6 +15,8 @@ dependencies:
   dart_dice_parser: ^2.0.0
   html: ^0.13.3+3
   http: ^0.12.0
+  html_unescape: ^1.0.2
+
 
 dev_dependencies:
   pedantic: ^1.9.0

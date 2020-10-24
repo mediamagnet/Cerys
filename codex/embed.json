@@ -1,857 +1,849 @@
-[
-    {"Cacophony": [
-    {
-      "Name": "Apple of Discord",
-      "Description": "Make an object irresistibly desirable to all humans present. Causes anyone affected to gain the obsessed condition and will actively work to gain the object and prevent anyone else having it.",
-      "Pool": "Manipulation + Expression Vs. Integrity",
-      "Source": "FoH 93"
-
-    },
-    {
-      "Name": "Anarchism",
-      "Description": "Causes a target to no longer care about social repercussions for their actions. Causes all appeals to peers, law or authority to be ignored.",
-      "Pool": "Manipulation + Politics - Composure",
-      "Source": "FoH 94"
-
-    },
-    {
-      "Name": "Breakdown",
-      "Description": "When the target tries to use a skill selected by the Embed user, they will instead use a different skill from the same category (Social, Physical, Mental).",
-      "Pool": "Wits + Medicine - Resolve",
-      "Source": "FoH 94"
-
-    },
-    {
-      "Name": "Bystander Effect",
-      "Description": "Attack someone in plain few without anyone else choosing to intervene.",
-      "Pool": "Manipulation + Intimidation",
-      "Source": "DtD 125"
-
-    },
-    {
-      "Name": "Cause and Effect",
-      "Description": "Invoking the Butterfly effect and providing an unrelated stimulus, the Demon causes a small event of nearly any sort to take place in their presence.",
-      "Pool": "Wits + [any Skill]",
-      "Source": "DtD 125"
-
-    },
-    {
-      "Name": "Combustion",
-      "Description": "The Demon renders almost any object flammable or prone to explosion.",
-      "Pool": "Wits + Science",
-      "Source": "DtD 126"
-
-    },
-    {
-      "Name": "Cool Heads Prevail",
-      "Description": "Prevents or ends a combat immediately, as those involved relax.",
-      "Pool": "Manipulation + Empathy -Composure",
-      "Source": "DtD 126"
-
-    },
-    {
-      "Name": "Deafen",
-      "Description": "Literally deafens a select victim.",
-      "Pool": "Manipulation + Medicine - Stamina",
-      "Source": "DtD 126"
-
-    },
-    {
-      "Name": "Devil's Advocate",
-      "Description": "Causes a victim to reflexively take the opposite stance to the demon's most recently stated position.",
-      "Pool": "Manipulation + Subterfuge - Resolve",
-      "Source": "DtD 126"
-
-    },
-    {
-      "Name": "Fire Drill",
-      "Description": "Activates alarms or sirens in the nearby area, penalising the perception rolls of anyone who does not know it is a false alarm by the Demon's Primum.",
-      "Pool": "Wits + Science",
-      "Source": "FoH 94"
-
-    },
-    {
-      "Name": "Fractal Reality",
-      "Description": "Encodes an action that has previously been performed to happen again under the same circumstances. Requires an exceptional success or a success on a chance die to perform. Repeating that action (performing an action with the same skill) will automatically cause an exceptional success on a single success. All future uses after that are penalised with no 10-again.",
-      "Pool": "Wits + Science",
-      "Source": "FoH 95"
-
-    },
-    {
-      "Name": "Hesitation",
-      "Description": "Forces a target to react slowly, potentially penalizing initiative.",
-      "Pool": "Manipulation + Intimidation - Resolve",
-      "Source": "DtD 127"
-
-    },
-    {
-      "Name": "Hush",
-      "Description": "Silences a combat, allowing it to take place unheard by those nearby.",
-      "Pool": "Dexterity + Brawl - Defense",
-      "Source": "DtD 127"
-
-    },
-    {
-      "Name": "Just Bruised",
-      "Description": "Allows the demon to mitigate the damage taken from almost any source.",
-      "Pool": "Wits + Medicine",
-      "Source": "DtD 128"
-
-    },
-    {
-      "Name": "Knockout Punch",
-      "Description": "Knock out a victim with a single blow for a defined period.",
-      "Pool": "Dexterity + Brawl - Defense",
-      "Source": "DtD 129"
-
-    },
-    {
-      "Name": "Left or Right?",
-      "Description": "Force the outcome of an event that contains only two possibilities, such as a coin flip.",
-      "Pool": "Manipulation + Science",
-      "Source": "DtD 129"
-
-    },
-    {
-      "Name": "Lucky Break",
-      "Description": "The demon achieves a specific desired ends through random chance.",
-      "Pool": "Manipulation + Occult",
-      "Source": "DtD 129"
-
-    },
-    {
-      "Name": "Merciless Gunman",
-      "Description": "Enables the demon to casually massacre large numbers of individuals quickly with a firearm.",
-      "Pool": "Dexterity + Firearms",
-      "Source": "DtD 130"
-
-    },
-    {
-      "Name": "No Quarter",
-      "Description": "The demon intensifies a fight, causing all those involved to aim to kill or maim their opponents, refusing to back down.",
-      "Pool": "Manipulation + Brawl vs. Resolve",
-      "Source": "DtD 130"
-
-    },
-    {
-      "Name": "On the Mend",
-      "Description": "Heals a target, potentially even of aggravated damage.",
-      "Pool": "Wits + Medicine",
-      "Source": "DtD 131"
-
-    },
-    {
-      "Name": "Password Entropy",
-      "Description": "When entering a password in a computer or machine, you will enter the correct password.",
-      "Pool": "Wits + Computer",
-      "Source": "FoH 95"
-
-    },
-    {
-      "Name": "Play Possum",
-      "Description": "Die for a number of hours equal to Primum, after which time come back to life. Damage taken after 'dying' is restored, but wounds suffered prior remain.",
-      "Pool": "Manipulation + Medicine",
-      "Source": "FoH 96"
-
-    },
-    {
-      "Name": "Raw Materials",
-      "Description": "The demon breaks an object, causing a new object of similar size but of the demon's choosing to appear in the location by happenstance not long after.",
-      "Pool": "Manipulation + Crafts",
-      "Source": "DtD 131"
-
-    },
-    {
-      "Name": "Ripple",
-      "Description": "Causes a ripple effect with the entire scene suffering misfortune and extra damage. Any damage taken will be suffered again next turn with the same severity and half the total amount of damage from a secondary but related source.",
-      "Pool": "Wits + Science",
-      "Source": "FoH 96"
-
-    },
-    {
-      "Name": "Sabotage",
-      "Description": "With a touch, the demon cripples a device such that it will no longer function until repaired.",
-      "Pool": "Dexterity + Crafts",
-      "Source": "DtD 131"
-
-    },
-    {
-      "Name": "Shatter",
-      "Description": "Allows the demon to utterly destroy small objects with a touch.",
-      "Pool": "Wits + Crafts",
-      "Source": "DtD 131"
-
-    },
-    {
-      "Name": "Shifty Eyes",
-      "Description": "Causes a victim to distrust another chosen individual.",
-      "Pool": "Manipulation + Subterfuge - Resolve",
-      "Source": "DtD 132"
-
-    },
-    {
-      "Name": "Special Someone",
-      "Description": "Allows the demon to stumble upon an individual matching certain desired criteria, though never a specific person.",
-      "Pool": "Wits + Empathy",
-      "Source": "DtD 132"
-
-    },
-    {
-      "Name": "Trip",
-      "Description": "Causes someone to trip over and suffer the \"Knocked Down\" tilt.",
-      "Pool": "Wits + Athletics - Dexterity",
-      "Source": "FoH 96"
-
-    },
-    {
-      "Name": "Victory at any Price",
-      "Description": "Increase the number of successes on the prior roll by one. The result of the \"Victory at any Price\" roll determines the toll the Demon pays in blood for use of this ability.",
-      "Pool": "Wits + Science",
-      "Source": "FoH 97"
-
-    }
-    ]},
-    {"Instrumental": [
-    {
-      "Name": "Ambush",
-      "Description": "Prepare a perfect ambush for some victims, gaining surprise for the first round of a combat.",
-      "Pool": "Wits + Stealth",
-      "Source": "DtD 132"
-
-    },
-    {
-      "Name": "Call Out",
-      "Description": "Weakens the desire of a target's allies to continue fighting. The target's allies will easily suffer the beaten down tilt, run away or surrender after minor damage.",
-      "Pool": "Manipulation + Intimidation vs. Presence + Supernatural Tolerance",
-      "Source": "FoH 97"
-
-    },
-    {
-      "Name": "Check Backdrop",
-      "Description": "The demon curses a combat with imprecision and confusion, such that all firearm attacks that do not take at least one turn aiming will automatically miss.",
-      "Pool": "Manipulation + Firearms",
-      "Source": "DtD 133"
-
-    },
-    {
-      "Name": "Data Retrieval",
-      "Description": "Become capable of viewing any data that a device has ever recorded or observed, but only at the time point that you specify.",
-      "Pool": "Wits + Computer",
-      "Source": "FoH 97"
-
-    },
-    {
-      "Name": "Data Wipe",
-      "Description": "Deletes electronic data more completely, penalises any attempts to recover the data by the Demon's Primum.",
-      "Pool": "Wits + Computer",
-      "Source": "FoH 98"
-
-    },
-    {
-      "Name": "Download Knowledge",
-      "Description": "Temporarily grants bonus Skill dots to a Demon.",
-      "Pool": "Wits + Computers",
-      "Source": "DtD 133"
-
-    },
-    {
-      "Name": "Efficiency",
-      "Description": "Enables the demon to perform extended actions and tasks with greatly increased speed.",
-      "Pool": "Wits + Academics",
-      "Source": "DtD 133"
-
-    },
-    {
-      "Name": "Ellipses",
-      "Description": "Causes a victim to get engrossed in some distracting activity.",
-      "Pool": "Manipulation + Expression",
-      "Source": "DtD 133"
-
-    },
-    {
-      "Name": "Freeze Assets",
-      "Description": "Perfectly blocks a victim from being capable of spending or acquiring any form of money for one day.",
-      "Pool": "Manipulation + Academics - Resources",
-      "Source": "DtD 134"
-
-    },
-    {
-      "Name": "Fulcrum Point",
-      "Description": "Moves even very large objects a short distance with a simple push.",
-      "Pool": "Wits + Science",
-      "Source": "DtD 135"
-
-    },
-    {
-      "Name": "Functional Identity",
-      "Description": "Change the functional purpose of a tool, allowing you to use its bonuses towards a different purpose.",
-      "Pool": "Wits + Crafts",
-      "Source": "FoH 98"
-
-    },
-    {
-      "Name": "Fungible Knowledge",
-      "Description": "Swaps the demon's skill ratings for a scene.",
-      "Pool": "Wits + Academics",
-      "Source": "DtD 135"
-
-    },
-    {
-      "Name": "High of Birth",
-      "Description": "Retroactively alters a human's fate so that they become wealthy or gifted and gain merits. A week later, the God Machine will send an angel to investigate the individual.",
-      "Pool": "Manipulation + Politics",
-      "Source": "FoH 98"
-
-    },
-    {
-      "Name": "Knock-Off",
-      "Description": "Dramatically change the value of an object, or change an equipment bonus.",
-      "Pool": "Dexterity + Larceny",
-      "Source": "FoH 99"
-
-    },
-    {
-      "Name": "Like I Built It",
-      "Description": "Grants the demon the ability to perfectly use and understand an object or structure, gaining bonus dice to its use.",
-      "Pool": "Wits + Craft",
-      "Source": "DtD 135"
-
-    },
-    {
-      "Name": "The Map Is Not The Territory",
-      "Description": "Inhibits a victim's ability to gain any sort of knowledge or benefit from printed materials.",
-      "Pool": "Manipulation + Academics - Intelligence",
-      "Source": "DtD 136"
-
-    },
-    {
-      "Name": "Miles Away",
-      "Description": "Fills the demon's ears with a comforting sound, that grants bonuses to resist distraction or suffering.",
-      "Pool": "Wits + Expression",
-      "Source": "DtD 136"
-
-    },
-    {
-      "Name": "Momentum",
-      "Description": "Allows the demon to use any other character's action to springboard their own, granting bonus dice based off that character's roll.",
-      "Pool": "Wits + Science",
-      "Source": "DtD 136"
-
-    },
-    {
-      "Name": "Open Sesame",
-      "Description": "Manipulates probability so that the Demon will \"discover\" that a door, window or other entrance to somewhere is unlocked.",
-      "Pool": "Wits + Larceny - Special Penalties",
-      "Source": "FoH 99"
-
-    },
-    {
-      "Name": "Read Hostility",
-      "Description": "Grants the ability to the demon or others to sense hostile intentions of new arrivals to the scene.",
-      "Pool": "Wits + Subterfuge",
-      "Source": "DtD 137"
-
-    },
-    {
-      "Name": "Right Tools, Right Job",
-      "Description": "Allows the demon to use virtually any tool for any task.",
-      "Pool": "Wits + Craft",
-      "Source": "DtD 137"
-
-    },
-    {
-      "Name": "Shift Consequences",
-      "Description": "Transfer the burden of some baleful effect, such as harm or embarrassment, from a beneficiary to someone or something else.",
-      "Pool": "Manipulation + Occult - Varies",
-      "Source": "DtD 137"
-
-    },
-    {
-      "Name": "Soup Up",
-      "Description": "Improves a vehicle's stats to closely resemble that often depicted in Hollywood.",
-      "Pool": "Dexterity + Drive - Special Penalties",
-      "Source": "FoH 99"
-
-    },
-    {
-      "Name": "Strike First",
-      "Description": "Moves a demon to the top of the Initiative order, even if they were surprised.",
-      "Pool": "Wits + Brawl",
-      "Source": "DtD 138"
-
-    },
-    {
-      "Name": "Synthesis",
-      "Description": "Scans a scene, psychometrically determining the cause of recent changes.",
-      "Pool": "Wits + Investigation",
-      "Source": "DtD 138"
-
-    },
-    {
-      "Name": "Tag & Release",
-      "Description": "Marks a person or object, allowing the demon to unerringly be capable of finding it for several days.",
-      "Pool": "Dexterity + Expression",
-      "Source": "DtD 138"
-
-    },
-    {
-      "Name": "Tools Into Toys",
-      "Description": "Penalizes the use of tools in a task, possibly even rendering it impossible.",
-      "Pool": "Manipulation + Craft",
-      "Source": "DtD 139"
-
-    },
-    {
-      "Name": "Trivia",
-      "Description": "Changes the nature of Trivia in the world so that it becomes truth.",
-      "Pool": "Manipulation + Expression",
-      "Source": "FoH 100"
-
-    },
-    {
-      "Name": "Turn Blade",
-      "Description": "Significantly reduces the damage from incoming melee weapons.",
-      "Pool": "Wits + Weaponry",
-      "Source": "DtD 139"
-
-    },
-    {
-      "Name": "Wasted Time",
-      "Description": "Makes an action take twice as long to complete, due to hiccups and small issues that go wrong.",
-      "Pool": "Wits + Science",
-      "Source": "FoH 100"
-
-    }
-    ]},
-    {"Mundane": [
-    {
-      "Name": "Alibi",
-      "Description": "Allows the demon to briefly dislocate from her cover, performing actions elsewhere and unsuspected.",
-      "Pool": "Manipulation + Stealth",
-      "Source": "DtD 139"
-
-    },
-    {
-      "Name": "Associate and Integrate",
-      "Description": "Change a single fact about the relationship between two people. Can be detected by unseen sense.",
-      "Pool": "Manipulation + Socialise (Vs. Resolve + Composure)",
-      "Source": "FoH 100"
-
-    },
-    {
-      "Name": "Authorized",
-      "Description": "Allows the demon to convince anyone that they have the legal right to be where they are doing what they are doing.",
-      "Pool": "Manipulation + Intimidation - Intelligence",
-      "Source": "DtD 140"
-
-    },
-    {
-      "Name": "Clothes Make the Man",
-      "Description": "Change total dots in the target skill to three and one speciality OR gain three specialities and one extra dot in the target skill temporarily, but the demon is branded an Impostor.",
-      "Pool": "Wits + Persuasion Vs. Wits + Target Skill",
-      "Source": "FoH 101"
-
-    },
-    {
-      "Name": "Cuckoo's Egg",
-      "Description": "Allows the demon to replace an object with another of comparable size, while forcing the owner to fail to notice.",
-      "Pool": "Dexterity + Larceny",
-      "Source": "DtD 140"
-
-    },
-    {
-      "Name": "Deep Cover",
-      "Description": "Allows for the Spoof ability to make the user appear as another Supernatural type. Allows the ability to determine the flavour of supernatural after the first time experiencing being observed magically.",
-      "Pool": "Manipulation + Occult",
-      "Source": "FoH 101"
-
-    },
-    {
-      "Name": "Diversion",
-      "Description": "Forces some targets to look away from a desired area, and to not look back for some time.",
-      "Pool": "Manipulation + Expression",
-      "Source": "DtD 140"
-
-    },
-    {
-      "Name": "Don't I Know You?",
-      "Description": "Causes a target to find the demon a reminder of familiar faces, improving the demon's social standing with the target.",
-      "Pool": "Manipulation + Subterfuge - Resolve",
-      "Source": "DtD 141"
-
-    },
-    {
-      "Name": "Earworm",
-      "Description": "Infects a victim with a consuming thought, which penalizes perception and focus.",
-      "Pool": "Manipulation + Expression - Composure",
-      "Source": "DtD 142"
-
-    },
-    {
-      "Name": "Going Native",
-      "Description": "Temporarily turn yourself into a human.",
-      "Pool": "Wits + Socialise",
-      "Source": "FoH 102"
-
-    },
-    {
-      "Name": "Homogeneous Memory",
-      "Description": "Manipulates the memories of participants in a previous scene, forcing all witnesses to believe a cover story to explain its events chosen by the demon.",
-      "Pool": "Manipulation + Subterfuge - Resolve",
-      "Source": "DtD 142"
-
-    },
-    {
-      "Name": "Identity Theft",
-      "Description": "Forces a victim into a deep sleep for several hours, while the demon usurps their identity.",
-      "Pool": "Manipulation + Subterfuge",
-      "Source": "DtD 142"
-
-    },
-    {
-      "Name": "Idle Conversation",
-      "Description": "Prevents listeners from mundanely eavesdropping on the demon's conversations.",
-      "Pool": "Manipulation + Socialize",
-      "Source": "DtD 143"
-
-    },
-    {
-      "Name": "In My Pocket",
-      "Description": "Allows the demon to produce a random instance of virtually any desired object from their pocket, provided it has not been established as not being there already.",
-      "Pool": "Dexterity + Larceny",
-      "Source": "DtD 143"
-
-    },
-    {
-      "Name": "Interference",
-      "Description": "Jams the ability of angels and the God-Machine to detect demons in an area.",
-      "Pool": "Manipulation + Subterfuge",
-      "Source": "DtD 144"
-
-    },
-    {
-      "Name": "Last Place You Look",
-      "Description": "Allows the demon to detect hidden objects in an area and grants bonuses to find them, though it does not inform the demon what those objects might be.",
-      "Pool": "Wits + Larceny",
-      "Source": "DtD 144"
-
-    },
-    {
-      "Name": "Like the Movies",
-      "Description": "After having scored an exceptional success or a failure on an action, contrived circumstance allows for a dramatic turnaround, or change in the user's fortunes. The change in fortune results in that action having been performed with a single success, but with a narrative twist. The narrative twist is beneficial if it was an exceptional success, but negative if it was a failure previously.",
-      "Pool": "Wits + Academics",
-      "Source": "FoH 102"
-
-    },
-    {
-      "Name": "Living Recorder",
-      "Description": "Allows the demon to specify a target individual to be a \"living recorder\" for specific duration. The demon can later touch the recorder and experience all that they did during this period.",
-      "Pool": "Manipulation + Investigation",
-      "Source": "DtD 145"
-
-    },
-    {
-      "Name": "Lost in the Crowd",
-      "Description": "Enables the demon to remain perfectly undetectable by mundane means so long as they hide in a crowd of at least ten people.",
-      "Pool": "Wits + Stealth",
-      "Source": "DtD 145"
-
-    },
-    {
-      "Name": "Meaninglessness",
-      "Description": "Curses a victim such that they lose the ability to comprehend all attempts at communication, in any medium, for a short time.",
-      "Pool": "Manipulation + Academics",
-      "Source": "DtD 145"
-
-    },
-    {
-      "Name": "Mistaken Identity",
-      "Description": "Causes the Demon and the target to be mistaken for each other for a number of hours.",
-      "Pool": "Manipulation + Persuasion - Composure",
-      "Source": "FoH 103"
-
-    },
-    {
-      "Name": "Never Here",
-      "Description": "Targets of this Embed are forced to forget the demon was even present in a previous scene at all, instead coming up with their own explanations for events she caused there.",
-      "Pool": "Manipulation + Stealth - Resolve",
-      "Source": "DtD 146"
-
-    },
-    {
-      "Name": "Occam's Razor",
-      "Description": "Forcing onlookers and the general area to try to rationalize what they witness, the demon gains a bonus to compromise rolls for manifesting obviously supernatural effects like Exploits and Demonic Transformations.",
-      "Pool": "Manipulation + Persuasion",
-      "Source": "DtD 146"
-
-    },
-    {
-      "Name": "Partitioned Memory",
-      "Description": "Causes a brief psychic split. The demon can feed fabricated information to a telepathic read, and can multitask a pair of Mental actions.",
-      "Pool": "Wits + Subterfuge",
-      "Source": "DSG 100"
-
-    },
-    {
-      "Name": "Persistent Legend",
-      "Description": "Allows a Legend to remain active permanently, instead of disappearing at the end of a scene.",
-      "Pool": "Wits + Academics",
-      "Source": "FoH 103"
-
-    },
-    {
-      "Name": "Quick Change",
-      "Description": "Instantly transforms the demon's outfit to meet desired specifications.",
-      "Pool": "Manipulation + Subterfuge",
-      "Source": "DtD 146"
-
-    },
-    {
-      "Name": "The Voting Dead",
-      "Description": "Assume the identity of a dead person, which for the period which the Embed is active replaces the real identity of your cover.",
-      "Pool": "Manipulation + Politics",
-      "Source": "FoH 103"
-
-    },
-    {
-      "Name": "Unperson",
-      "Description": "For one scene, strips a victim of their ability to identify themselves to anyone, even those intimately familiar with them.",
-      "Pool": "Manipulation + Subterfuge - Composure",
-      "Source": "DtD 147"
-
-    },
-    {
-      "Name": "Wave Function Collapse",
-      "Description": "Traps a supernatural being in their current form, preventing them from changing. Demon (or non-human supernatural) forms cannot turn into humans, human-forms cannot turn into demon forms temporarily and Demons in cover cannot separate from their cover in any way.",
-      "Pool": "Dexterity + Brawl Vs. Stamina + Supernatural Tolerance",
-      "Source": "FoH 104"
-
-    },
-    {
-      "Name": "Without a Trace",
-      "Description": "Vaporizes all physical traces of the demon from a scene.",
-      "Pool": "Manipulation + Investigation",
-      "Source": "DtD 147"
-
-    },
-    {
-      "Name": "You Can Tell Me",
-      "Description": "Causes the target to speak nothing but the whole truth about a subject.",
-      "Pool": "Manipulation + Empathy - Composure",
-      "Source": "FoH 105"
-
-    }
-    ]},
-    {"Vocal": [
-
-    {
-      "Name": "Across a Crowded Room",
-      "Description": "Enables the demon to whisper to any target or targets he can see.",
-      "Pool": "Manipulation + Subterfuge",
-      "Source": "DtD 148"
-
-    },
-    {
-      "Name": "Animal Communication",
-      "Description": "Issues a task to an animal.",
-      "Pool": "Manipulation + Animal Ken",
-      "Source": "DtD 148"
-
-    },
-    {
-      "Name": "Animal Messenger",
-      "Description": "Tasks an animal with delivering a message to a specific person, who will be able to comprehend the creature's expression.",
-      "Pool": "Manipulation + Animal Ken",
-      "Source": "DtD 148"
-
-    },
-    {
-      "Name": "Borrowed Expertise",
-      "Description": "Allows the demon to lend out their skill dots and specialties to other people.",
-      "Pool": "Manipulation + [Granted Skill]",
-      "Source": "DtD 149"
-
-    },
-    {
-      "Name": "Common Misconception",
-      "Description": "Causes a target to operate based on faulty information that \"everyone knows\", penalizing a skill roll.",
-      "Pool": "Manipulation + Science",
-      "Source": "DtD 149"
-
-    },
-    {
-      "Name": "Eavesdrop",
-      "Description": "Enables the demon to understand any conversation he can see.",
-      "Pool": "Wits + Empathy",
-      "Source": "DtD 149"
-
-    },
-    {
-      "Name": "Everybody Knows",
-      "Description": "Sparks a vile rumor about a victim, which rapidly spreads memetically.",
-      "Pool": "Manipulation + Subterfuge",
-      "Source": "DtD 150"
-
-    },
-    {
-      "Name": "Find the Leak",
-      "Description": "Informs the demon of who in a group would most desire to talk about a particular topic, and grants bonuses to encourage them to do so.",
-      "Pool": "Wits + Empathy",
-      "Source": "DtD 150"
-
-    },
-    {
-      "Name": "Freudian Slip",
-      "Description": "Forces a mortal to make an honest and heartfelt response to the last thing the demon said.",
-      "Pool": "Manipulation + Empathy (-Composure)",
-      "Source": "DtD 150"
-
-    },
-    {
-      "Name": "Heart's Desire",
-      "Description": "Informs the demon of the target's Aspirations, Virtue, and Vice.",
-      "Pool": "Wits + Empathy - Composure",
-      "Source": "DtD 151"
-
-    },
-    {
-      "Name": "Imagine",
-      "Description": "Causes a spark of clarity in humans that allows them to see the world free of the God Machine and grants conditions appropriate to such a life-changing event.",
-      "Pool": "Manipulation + Persuasion",
-      "Source": "FoH 105"
-
-    },
-    {
-      "Name": "The Look",
-      "Description": "When in eye contact, gives a look that causes total body paralysis while maintained. The victim will slowly die of organ failure or pass out if The Look is maintained for an extended period, but external damage breaks the effect.",
-      "Pool": "Manipulation + Intimidation - Stamina",
-      "Source": "FoH 105"
-
-    },
-    {
-      "Name": "Loose Lips",
-      "Description": "Use social activity to cause a target to speak freely about information that they would not otherwise share, removing Doors. The victim passes out with only a hazy memory of the interaction afterwards.",
-      "Pool": "Manipulation + Socialise - Stamina",
-      "Source": "FoH 106"
-
-    },
-    {
-      "Name": "Marco Polo",
-      "Description": "The demon whispers a short tune or phrase which anyone present is forced to complete, ruining stealth and ambushes.",
-      "Pool": "Manipulation + Persuasion - Composure",
-      "Source": "DtD 151"
-
-    },
-    {
-      "Name": "Mercury Retrograde",
-      "Description": "Forces a miscommunication in a conversation between two targets, which the demon then gets bonuses to exploit.",
-      "Pool": "Manipulation + Subterfuge - Wits",
-      "Source": "DtD 151"
-
-    },
-    {
-      "Name": "Muse",
-      "Description": "Instills an idea in a target, and grants the demon bonuses to encourage the target to act on it.",
-      "Pool": "Manipulation + Expression - Resolve",
-      "Source": "DtD 152"
-
-    },
-    {
-      "Name": "The Only Word That Matters",
-      "Description": "Causes a person to only say what the Demon wants them to say. Can either apply generally to everything the target says, or can be coded for specific trigger events.",
-      "Pool": "Manipulation + Expression - Composure",
-      "Source": "FoH 106"
-
-    },
-    {
-      "Name": "Recurring Hallucinations",
-      "Description": "Curses a victim with nightmarish hallucinations that last for days, penalizing all Mental and Social rolls and forcing regular breaking points.",
-      "Pool": "Manipulation + Occult - Resolve",
-      "Source": "DtD 152"
-
-    },
-    {
-      "Name": "Remote Link-Up",
-      "Description": "Allows a Demon to create sensory links between another individual or a group of individual that allows them to share their natural senses (e.g. vision or hearing.)",
-      "Pool": "Wits + Socialise",
-      "Source": "FoH 107"
-
-    },
-    {
-      "Name": "Rhetoric",
-      "Description": "Causes the target to temporarily support the Demon's argument in a debate, removing a Door and being temporarily sympathetic to the Demon's point of view.",
-      "Pool": "Wits + Subterfuge",
-      "Source": "FoH 107"
-
-    },
-    {
-      "Name": "Social Dynamics",
-      "Description": "Grants the demon knowledge of the dynamics and status of all those within a group, granting bonuses to social interactions that exploits this knowledge.",
-      "Pool": "Wits + Socialize",
-      "Source": "DtD 153"
-
-    },
-    {
-      "Name": "Social Engineering",
-      "Description": "Manipulates a target into divulging information that they shouldn't under normal circumstances. The information also provides a +1 bonus to a later, related Computer, Investigation or Persuasion roll.",
-      "Pool": "Manipulation + Persuasion",
-      "Source": "FoH 107"
-
-    },
-    {
-      "Name": "Special Message",
-      "Description": "Instills a secret message into a medium such as a song or a work of art, intended for a particular recipient, who will understand the message when they are exposed to the media in question.",
-      "Pool": "Manipulation + Expression",
-      "Source": "DtD 153"
-
-    },
-    {
-      "Name": "Strength Through Adversity",
-      "Description": "Causes a target to suffer incredible hardship that lasts for several days and escalates over that period. Once the effect ends, the hardship disappears but the target may come out ahead having laboured under conditions that are resolved.",
-      "Pool": "Manipulation + Intimidation - Resolve",
-      "Source": "FoH 108"
-
-    },
-    {
-      "Name": "Sum of all Fears",
-      "Description": "Learn a target's fears, breaking points, loved ones, derangements or Conditions that could be exploited to scare them.",
-      "Pool": "Wits + Empathy - Composure",
-      "Source": "FoH 108"
-
-    },
-    {
-      "Name": "Tower of Babel",
-      "Description": "Curses all those present on the scene with the inability to communicate with anyone else for a few turns.",
-      "Pool": "Manipulation + Socialize",
-      "Source": "DtD 154"
-
-    },
-    {
-      "Name": "Trick of the Light",
-      "Description": "Causes a single target to see a fleeting and vague illusion of the demon's specifications.",
-      "Pool": "Manipulation + Investigation - Wits",
-      "Source": "DtD 154"
-
-    },
-    {
-      "Name": "Trust No One",
-      "Description": "Inflicts a victim with crippling paranoia, preventing them from making use of merits that depend on others, or even to interact casually with friends.",
-      "Pool": "Manipulation + Subterfuge - Resolve",
-      "Source": "DtD 155"
-
-    },
-    {
-      "Name": "Voice of the Machine",
-      "Description": "Allows the demon to listen in to what the God-Machine is saying in an area, which may inform what angels are up to or other such knowledge.",
-      "Pool": "Wits + Craft",
-      "Source": "DtD 155"
-
-    },
-    {
-      "Name": "Vox",
-      "Description": "Change your voice to perfectly imitate any other voice or mimic other sounds previously heard as the Demon sees fit.",
-      "Pool": "Manipulation + Expression",
-      "Source": "FoH 109"
-    }
-  ]}
-]
+{
+  "apple_of_discord": {
+    "Name": "Apple of Discord",
+    "Description": "Make an object irresistibly desirable to all humans present. Causes anyone affected to gain the obsessed condition and will actively work to gain the object and prevent anyone else having it.",
+    "Pool": "Manipulation + Expression Vs. Integrity",
+    "Source": "FoH 93",
+    "Type": "Cacophony"
+  },
+  "anarchism": {
+    "Name": "Anarchism",
+    "Description": "Causes a target to no longer care about social repercussions for their actions. Causes all appeals to peers, law or authority to be ignored.",
+    "Pool": "Manipulation + Politics - Composure </,td>",
+    "Source": "FoH 94",
+    "Type": "Cacophony"
+  },
+  "breakdown": {
+    "Name": "Breakdown",
+    "Description": "When the target tries to use a skill selected by the Embed user, they will instead use a different skill from the same category (Social, Physical, Mental).",
+    "Pool": "Wits + Medicine - Resolve",
+    "Source": "FoH 94",
+    "Type": "Cacophony"
+  },
+  "bystander_effect": {
+    "Name": "Bystander Effect",
+    "Description": "Attack someone in plain few without anyone else choosing to intervene.",
+    "Pool": "Manipulation + Intimidation",
+    "Source": "DtD 125",
+    "Type": "Cacophony"
+  },
+  "cause_and_effect": {
+    "Name": "Cause and Effect",
+    "Description": "Invoking the Butterfly effect and providing an unrelated stimulus, the Demon causes a small event of nearly any sort to take place in their presence.",
+    "Pool": "Wits + [any Skill]",
+    "Source": "DtD 125",
+    "Type": "Cacophony"
+  },
+  "combustion": {
+    "Name": "Combustion",
+    "Description": "The Demon renders almost any object flammable or prone to explosion.",
+    "Pool": "Wits + Science",
+    "Source": "DtD 126",
+    "Type": "Cacophony"
+  },
+  "cool_heads_prevail": {
+    "Name": "Cool Heads Prevail",
+    "Description": "Prevents or ends a combat immediately, as those involved relax.",
+    "Pool": "Manipulation + Empathy -Composure",
+    "Source": "DtD 126",
+    "Type": "Cacophony"
+  },
+  "deafen": {
+    "Name": "Deafen",
+    "Description": "Literally deafens a select victim.",
+    "Pool": "Manipulation + Medicine - Stamina",
+    "Source": "DtD 126",
+    "Type": "Cacophony"
+  },
+  "devil's_advocate": {
+    "Name": "Devil's Advocate",
+    "Description": "Causes a victim to reflexively take the opposite stance to the demon's most recently stated position.",
+    "Pool": "Manipulation + Subterfuge - Resolve",
+    "Source": "DtD 126",
+    "Type": "Cacophony"
+  },
+  "fire_drill": {
+    "Name": "Fire Drill",
+    "Description": "Activates alarms or sirens in the nearby area, penalising the perception rolls of anyone who does not know it is a false alarm by the Demon's Primum.",
+    "Pool": "Wits + Science",
+    "Source": "FoH 94",
+    "Type": "Cacophony"
+  },
+  "fractal_reality": {
+    "Name": "Fractal Reality",
+    "Description": "Encodes an action that has previously been performed to happen again under the same circumstances. Requires an exceptional success or a success on a chance die to perform. Repeating that action (performing an action with the same skill) will automatically cause an exceptional success on a single success. All future uses after that are penalised with no 10-again.",
+    "Pool": "Wits + Science",
+    "Source": "FoH 95",
+    "Type": "Cacophony"
+  },
+  "hesitation": {
+    "Name": "Hesitation",
+    "Description": "Forces a target to react slowly, potentially penalizing initiative.",
+    "Pool": "Manipulation + Intimidation - Resolve",
+    "Source": "DtD 127",
+    "Type": "Cacophony"
+  },
+  "hush": {
+    "Name": "Hush",
+    "Description": "Silences a combat, allowing it to take place unheard by those nearby.",
+    "Pool": "Dexterity + Brawl - Defense",
+    "Source": "DtD 127",
+    "Type": "Cacophony"
+  },
+  "just_bruised": {
+    "Name": "Just Bruised",
+    "Description": "Allows the demon to mitigate the damage taken from almost any source.",
+    "Pool": "Wits + Medicine",
+    "Source": "DtD 128",
+    "Type": "Cacophony"
+  },
+  "knockout_punch": {
+    "Name": "Knockout Punch",
+    "Description": "Knock out a victim with a single blow for a defined period.",
+    "Pool": "Dexterity + Brawl - Defense",
+    "Source": "DtD 129",
+    "Type": "Cacophony"
+  },
+  "left_or_right?": {
+    "Name": "Left or Right?",
+    "Description": "Force the outcome of an event that contains only two possibilities, such as a coin flip.",
+    "Pool": "Manipulation + Science",
+    "Source": "DtD 129",
+    "Type": "Cacophony"
+  },
+  "lucky_break": {
+    "Name": "Lucky Break",
+    "Description": "The demon achieves a specific desired ends through random chance.",
+    "Pool": "Manipulation + Occult",
+    "Source": "DtD 129",
+    "Type": "Cacophony"
+  },
+  "merciless_gunman": {
+    "Name": "Merciless Gunman",
+    "Description": "Enables the demon to casually massacre large numbers of individuals quickly with a firearm.",
+    "Pool": "Dexterity + Firearms",
+    "Source": "DtD 130",
+    "Type": "Cacophony"
+  },
+  "no_quarter": {
+    "Name": "No Quarter",
+    "Description": "The demon intensifies a fight, causing all those involved to aim to kill or maim their opponents, refusing to back down.",
+    "Pool": "Manipulation + Brawl vs. Resolve",
+    "Source": "DtD 130",
+    "Type": "Cacophony"
+  },
+  "on_the_mend": {
+    "Name": "On the Mend",
+    "Description": "Heals a target, potentially even of aggravated damage.",
+    "Pool": "Wits + Medicine",
+    "Source": "DtD 131",
+    "Type": "Cacophony"
+  },
+  "password_entropy": {
+    "Name": "Password Entropy",
+    "Description": "When entering a password in a computer or machine, you will enter the correct password.",
+    "Pool": "Wits + Computer",
+    "Source": "FoH 95",
+    "Type": "Cacophony"
+  },
+  "play_possum": {
+    "Name": "Play Possum",
+    "Description": "Die for a number of hours equal to Primum, after which time come back to life. Damage taken after 'dying' is restored, but wounds suffered prior remain.",
+    "Pool": "Manipulation + Medicine",
+    "Source": "FoH 96",
+    "Type": "Cacophony"
+  },
+  "raw_materials": {
+    "Name": "Raw Materials",
+    "Description": "The demon breaks an object, causing a new object of similar size but of the demon's choosing to appear in the location by happenstance not long after.",
+    "Pool": "Manipulation + Crafts",
+    "Source": "DtD 131",
+    "Type": "Cacophony"
+  },
+  "ripple": {
+    "Name": "Ripple",
+    "Description": "Causes a ripple effect with the entire scene suffering misfortune and extra damage. Any damage taken will be suffered again next turn with the same severity and half the total amount of damage from a secondary but related source.",
+    "Pool": "Wits + Science",
+    "Source": "FoH 96",
+    "Type": "Cacophony"
+  },
+  "sabotage": {
+    "Name": "Sabotage",
+    "Description": "With a touch, the demon cripples a device such that it will no longer function until repaired.",
+    "Pool": "Dexterity + Crafts",
+    "Source": "DtD 131",
+    "Type": "Cacophony"
+  },
+  "shatter": {
+    "Name": "Shatter",
+    "Description": "Allows the demon to utterly destroy small objects with a touch.",
+    "Pool": "Wits + Crafts",
+    "Source": "DtD 131",
+    "Type": "Cacophony"
+  },
+  "shifty_eyes": {
+    "Name": "Shifty Eyes",
+    "Description": "Causes a victim to distrust another chosen individual.",
+    "Pool": "Manipulation + Subterfuge - Resolve",
+    "Source": "DtD 132",
+    "Type": "Cacophony"
+  },
+  "special_someone": {
+    "Name": "Special Someone",
+    "Description": "Allows the demon to stumble upon an individual matching certain desired criteria, though never a specific person.",
+    "Pool": "Wits + Empathy",
+    "Source": "DtD 132",
+    "Type": "Cacophony"
+  },
+  "trip": {
+    "Name": "Trip",
+    "Description": "Causes someone to trip over and suffer the \"Knocked Down\" tilt.",
+    "Pool": "Wits + Athletics - Dexterity",
+    "Source": "FoH 96",
+    "Type": "Cacophony"
+  },
+  "victory_at_any_price": {
+    "Name": "Victory at any Price",
+    "Description": "Increase the number of successes on the prior roll by one. The result of the \"Victory at any Price\" roll determines the toll the Demon pays in blood for use of this ability.",
+    "Pool": "Wits + Science",
+    "Source": "FoH 97",
+    "Type": "Cacophony"
+  },
+  "ambush": {
+    "Name": "Ambush",
+    "Description": "Prepare a perfect ambush for some victims, gaining surprise for the first round of a combat.",
+    "Pool": "Wits + Stealth",
+    "Source": "DtD 132",
+    "Type": "Instrumental"
+  },
+  "call_out": {
+    "Name": "Call Out",
+    "Description": "Weakens the desire of a target's allies to continue fighting. The target's allies will easily suffer the beaten down tilt, run away or surrender after minor damage.",
+    "Pool": "Manipulation + Intimidation vs. Presence + Supernatural Tolerance",
+    "Source": "FoH 97",
+    "Type": "Instrumental"
+  },
+  "check_backdrop": {
+    "Name": "Check Backdrop",
+    "Description": "The demon curses a combat with imprecision and confusion, such that all firearm attacks that do not take at least one turn aiming will automatically miss.",
+    "Pool": "Manipulation + Firearms",
+    "Source": "DtD 133",
+    "Type": "Instrumental"
+  },
+  "data_retrieval": {
+    "Name": "Data Retrieval",
+    "Description": "Become capable of viewing any data that a device has ever recorded or observed, but only at the time point that you specify.",
+    "Pool": "Wits + Computer",
+    "Source": "FoH 97",
+    "Type": "Instrumental"
+  },
+  "data_wipe": {
+    "Name": "Data Wipe",
+    "Description": "Deletes electronic data more completely, penalises any attempts to recover the data by the Demon's Primum.",
+    "Pool": "Wits + Computer",
+    "Source": "FoH 98",
+    "Type": "Instrumental"
+  },
+  "download_knowledge": {
+    "Name": "Download Knowledge",
+    "Description": "Temporarily grants bonus Skill dots to a Demon.",
+    "Pool": "Wits + Computers",
+    "Source": "DtD 133",
+    "Type": "Instrumental"
+  },
+  "efficiency": {
+    "Name": "Efficiency",
+    "Description": "Enables the demon to perform extended actions and tasks with greatly increased speed.",
+    "Pool": "Wits + Academics",
+    "Source": "DtD 133",
+    "Type": "Instrumental"
+  },
+  "ellipses": {
+    "Name": "Ellipses",
+    "Description": "Causes a victim to get engrossed in some distracting activity.",
+    "Pool": "Manipulation + Expression",
+    "Source": "DtD 133",
+    "Type": "Instrumental"
+  },
+  "freeze_assets": {
+    "Name": "Freeze Assets",
+    "Description": "Perfectly blocks a victim from being capable of spending or acquiring any form of money for one day.",
+    "Pool": "Manipulation + Academics - Resources",
+    "Source": "DtD 134",
+    "Type": "Instrumental"
+  },
+  "fulcrum_point": {
+    "Name": "Fulcrum Point",
+    "Description": "Moves even very large objects a short distance with a simple push.",
+    "Pool": "Wits + Science",
+    "Source": "DtD 135",
+    "Type": "Instrumental"
+  },
+  "functional_identity": {
+    "Name": "Functional Identity",
+    "Description": "Change the functional purpose of a tool, allowing you to use its bonuses towards a different purpose.",
+    "Pool": "Wits + Crafts",
+    "Source": "FoH 98",
+    "Type": "Instrumental"
+  },
+  "fungible_knowledge": {
+    "Name": "Fungible Knowledge",
+    "Description": "Swaps the demon's skill ratings for a scene.",
+    "Pool": "Wits + Academics",
+    "Source": "DtD 135",
+    "Type": "Instrumental"
+  },
+  "high_of_birth": {
+    "Name": "High of Birth",
+    "Description": "Retroactively alters a human's fate so that they become wealthy or gifted and gain merits. A week later, the God Machine will send an angel to investigate the individual.",
+    "Pool": "Manipulation + Politics",
+    "Source": "FoH 98",
+    "Type": "Instrumental"
+  },
+  "knock-off": {
+    "Name": "Knock-Off",
+    "Description": "Dramatically change the value of an object, or change an equipment bonus.",
+    "Pool": "Dexterity + Larceny",
+    "Source": "FoH 99",
+    "Type": "Instrumental"
+  },
+  "like_i_built_it": {
+    "Name": "Like I Built It",
+    "Description": "Grants the demon the ability to perfectly use and understand an object or structure, gaining bonus dice to its use.",
+    "Pool": "Wits + Craft",
+    "Source": "DtD 135",
+    "Type": "Instrumental"
+  },
+  "the_map_is_not_the_territory": {
+    "Name": "The Map Is Not The Territory",
+    "Description": "Inhibits a victim's ability to gain any sort of knowledge or benefit from printed materials.",
+    "Pool": "Manipulation + Academics - Intelligence",
+    "Source": "DtD 136",
+    "Type": "Instrumental"
+  },
+  "miles_away": {
+    "Name": "Miles Away",
+    "Description": "Fills the demon's ears with a comforting sound, that grants bonuses to resist distraction or suffering.",
+    "Pool": "Wits + Expression",
+    "Source": "DtD 136",
+    "Type": "Instrumental"
+  },
+  "momentum": {
+    "Name": "Momentum",
+    "Description": "Allows the demon to use any other character's action to springboard their own, granting bonus dice based off that character's roll.",
+    "Pool": "Wits + Science",
+    "Source": "DtD 136",
+    "Type": "Instrumental"
+  },
+  "open_sesame": {
+    "Name": "Open Sesame",
+    "Description": "Manipulates probability so that the Demon will \"discover\" that a door, window or other entrance to somewhere is unlocked.",
+    "Pool": "Wits + Larceny - Special Penalties",
+    "Source": "FoH 99",
+    "Type": "Instrumental"
+  },
+  "read_hostility": {
+    "Name": "Read Hostility",
+    "Description": "Grants the ability to the demon or others to sense hostile intentions of new arrivals to the scene.",
+    "Pool": "Wits + Subterfuge",
+    "Source": "DtD 137",
+    "Type": "Instrumental"
+  },
+  "right_tools,_right_job": {
+    "Name": "Right Tools, Right Job",
+    "Description": "Allows the demon to use virtually any tool for any task.",
+    "Pool": "Wits + Craft",
+    "Source": "DtD 137",
+    "Type": "Instrumental"
+  },
+  "shift_consequences": {
+    "Name": "Shift Consequences",
+    "Description": "Transfer the burden of some baleful effect, such as harm or embarrassment, from a beneficiary to someone or something else.",
+    "Pool": "Manipulation + Occult - Varies",
+    "Source": "DtD 137",
+    "Type": "Instrumental"
+  },
+  "soup_up": {
+    "Name": "Soup Up",
+    "Description": "Improves a vehicle's stats to closely resemble that often depicted in Hollywood.",
+    "Pool": "Dexterity + Drive - Special Penalties",
+    "Source": "FoH 99",
+    "Type": "Instrumental"
+  },
+  "strike_first": {
+    "Name": "Strike First",
+    "Description": "Moves a demon to the top of the Initiative order, even if they were surprised.",
+    "Pool": "Wits + Brawl",
+    "Source": "DtD 138",
+    "Type": "Instrumental"
+  },
+  "synthesis": {
+    "Name": "Synthesis",
+    "Description": "Scans a scene, psychometrically determining the cause of recent changes.",
+    "Pool": "Wits + Investigation",
+    "Source": "DtD 138",
+    "Type": "Instrumental"
+  },
+  "tag_&amp;_release": {
+    "Name": "Tag &amp; Release",
+    "Description": "Marks a person or object, allowing the demon to unerringly be capable of finding it for several days.",
+    "Pool": "Dexterity + Expression",
+    "Source": "DtD 138",
+    "Type": "Instrumental"
+  },
+  "tools_into_toys": {
+    "Name": "Tools Into Toys",
+    "Description": "Penalizes the use of tools in a task, possibly even rendering it impossible.",
+    "Pool": "Manipulation + Craft",
+    "Source": "DtD 139",
+    "Type": "Instrumental"
+  },
+  "trivia": {
+    "Name": "Trivia",
+    "Description": "Changes the nature of Trivia in the world so that it becomes truth.",
+    "Pool": "Manipulation + Expression",
+    "Source": "FoH 100",
+    "Type": "Instrumental"
+  },
+  "turn_blade": {
+    "Name": "Turn Blade",
+    "Description": "Significantly reduces the damage from incoming melee weapons.",
+    "Pool": "Wits + Weaponry",
+    "Source": "DtD 139",
+    "Type": "Instrumental"
+  },
+  "wasted_time": {
+    "Name": "Wasted Time",
+    "Description": "Makes an action take twice as long to complete, d,ue to hiccups and small issues that go wrong.",
+    "Pool": "Wits + Science",
+    "Source": "FoH 100",
+    "Type": "Instrumental"
+  },
+  "alibi": {
+    "Name": "Alibi",
+    "Description": "Allows the demon to briefly dislocate from her cover, performing actions elsewhere and unsuspected.",
+    "Pool": "Manipulation + Stealth",
+    "Source": "DtD 139",
+    "Type": "Mundane"
+  },
+  "associate_and_integrate": {
+    "Name": "Associate and Integrate",
+    "Description": "Change a single fact about the relationship between two people. Can be detected by unseen sense.",
+    "Pool": "Manipulation + Socialise (Vs. Resolve + Composure)",
+    "Source": "FoH 100",
+    "Type": "Mundane"
+  },
+  "authorized": {
+    "Name": "Authorized",
+    "Description": "Allows the demon to convince anyone that they have the legal right to be where they are doing what they are doing.",
+    "Pool": "Manipulation + Intimidation - Intelligence",
+    "Source": "DtD 140",
+    "Type": "Mundane"
+  },
+  "clothes_make_the_man": {
+    "Name": "Clothes Make the Man",
+    "Description": "Change total dots in the target skill to three and one speciality OR gain three specialities and one extra dot in the target skill temporarily, but the demon is branded an Impostor.",
+    "Pool": "Wits + Persuasion Vs. Wits + Target Skill",
+    "Source": "FoH 101",
+    "Type": "Mundane"
+  },
+  "cuckoo's_egg": {
+    "Name": "Cuckoo's Egg",
+    "Description": "Allows the demon to replace an object with another of comparable size, while forcing the owner to fail to notice.",
+    "Pool": "Dexterity + Larceny",
+    "Source": "DtD 140",
+    "Type": "Mundane"
+  },
+  "deep_cover": {
+    "Name": "Deep Cover",
+    "Description": "Allows for the Spoof ability to make the user appear as another Supernatural type. Allows the ability to determine the flavour of supernatural after the first time experiencing being observed magically.",
+    "Pool": "Manipulation + Occult",
+    "Source": "FoH 101",
+    "Type": "Mundane"
+  },
+  "diversion": {
+    "Name": "Diversion",
+    "Description": "Forces some targets to look away from a desired area, and to not look back for some time.",
+    "Pool": "Manipulation + Expression",
+    "Source": "DtD 140",
+    "Type": "Mundane"
+  },
+  "don't_i_know_you?": {
+    "Name": "Don't I Know You?",
+    "Description": "Causes a target to find the demon a reminder of familiar faces, improving the demon's social standing with the target.",
+    "Pool": "Manipulation + Subterfuge - Resolve",
+    "Source": "DtD 141",
+    "Type": "Mundane"
+  },
+  "earworm": {
+    "Name": "Earworm",
+    "Description": "Infects a victim with a consuming thought, which penalizes perception and focus.",
+    "Pool": "Manipulation + Expression - Composure",
+    "Source": "DtD 142",
+    "Type": "Mundane"
+  },
+  "going_native": {
+    "Name": "Going Native",
+    "Description": "Temporarily turn yourself into a human.",
+    "Pool": "Wits + Socialise",
+    "Source": "FoH 102",
+    "Type": "Mundane"
+  },
+  "homogeneous_memory": {
+    "Name": "Homogeneous Memory",
+    "Description": "Manipulates the memories of participants in a previous scene, forcing all witnesses to believe a cover story to explain its events chosen by the demon.",
+    "Pool": "Manipulation + Subterfuge - Resolve",
+    "Source": "DtD 142",
+    "Type": "Mundane"
+  },
+  "identity_theft": {
+    "Name": "Identity Theft",
+    "Description": "Forces a victim into a deep sleep for several hours, while the demon usurps their identity.",
+    "Pool": "Manipulation + Subterfuge",
+    "Source": "DtD 142",
+    "Type": "Mundane"
+  },
+  "idle_conversation": {
+    "Name": "Idle Conversation",
+    "Description": "Prevents listeners from mundanely eavesdropping on the demon's conversations.",
+    "Pool": "Manipulation + Socialize",
+    "Source": "DtD 143",
+    "Type": "Mundane"
+  },
+  "in_my_pocket": {
+    "Name": "In My Pocket",
+    "Description": "Allows the demon to produce a random instance of virtually any desired object from their pocket, provided it has not been established as not being there already.",
+    "Pool": "Dexterity + Larceny",
+    "Source": "DtD 143",
+    "Type": "Mundane"
+  },
+  "interference": {
+    "Name": "Interference",
+    "Description": "Jams the ability of angels and the God-Machine to detect demons in an area.",
+    "Pool": "Manipulation + Subterfuge",
+    "Source": "DtD 144",
+    "Type": "Mundane"
+  },
+  "last_place_you_look": {
+    "Name": "Last Place You Look",
+    "Description": "Allows the demon to detect hidden objects in an area and grants bonuses to find them, though it does not inform the demon what those objects might be.",
+    "Pool": "Wits + Larceny",
+    "Source": "DtD 144",
+    "Type": "Mundane"
+  },
+  "like_the_movies": {
+    "Name": "Like the Movies",
+    "Description": "After having scored an exceptional success or a failure on an action, contrived circumstance allows for a dramatic turnaround, or change in the user's fortunes. The change in fortune results in that action having been performed with a single success, but with a narrative twist. The narrative twist is beneficial if it was an exceptional success, but negative if it was a failure previously.",
+    "Pool": "Wits + Academics",
+    "Source": "FoH 102",
+    "Type": "Mundane"
+  },
+  "living_recorder": {
+    "Name": "Living Recorder",
+    "Description": "Allows the demon to specify a target individual to be a \"living recorder\" for specific duration. The demon can later touch the recorder and experience all that they did during this period.",
+    "Pool": "Manipulation + Investigation",
+    "Source": "DtD 145",
+    "Type": "Mundane"
+  },
+  "lost_in_the_crowd": {
+    "Name": "Lost in the Crowd",
+    "Description": "Enables the demon to remain perfectly undetectable by mundane means so long as they hide in a crowd of at least ten people.",
+    "Pool": "Wits + Stealth",
+    "Source": "DtD 145",
+    "Type": "Mundane"
+  },
+  "meaninglessness": {
+    "Name": "Meaninglessness",
+    "Description": "Curses a victim such that they lose the ability to comprehend all attempts at communication, in any medium, for a short time.",
+    "Pool": "Manipulation + Academics",
+    "Source": "DtD 145",
+    "Type": "Mundane"
+  },
+  "mistaken_identity": {
+    "Name": "Mistaken Identity",
+    "Description": "Causes the Demon and the target to be mistaken for each other for a number of hours.",
+    "Pool": "Manipulation + Persuasion - Composure",
+    "Source": "FoH 103",
+    "Type": "Mundane"
+  },
+  "never_here": {
+    "Name": "Never Here",
+    "Description": "Targets of this Embed are forced to forget the demon was even present in a previous scene at all, instead coming up with their own explanations for events she caused there.",
+    "Pool": "Manipulation + Stealth - Resolve",
+    "Source": "DtD 146",
+    "Type": "Mundane"
+  },
+  "occam's_razor": {
+    "Name": "Occam's Razor",
+    "Description": "Forcing onlookers and the general area to try to rationalize what they witness, the demon gains a bonus to compromise rolls for manifesting obviously supernatural effects like Exploits and Demonic Transformations.",
+    "Pool": "Manipulation + Persuasion",
+    "Source": "DtD 146",
+    "Type": "Mundane"
+  },
+  "partitioned_memory": {
+    "Name": "Partitioned Memory",
+    "Description": "Causes a brief psychic split. The demon can feed fabricated information to a telepathic read, and can multitask a pair of Mental actions.",
+    "Pool": "Wits + Subterfuge",
+    "Source": "DSG 100",
+    "Type": "Mundane"
+  },
+  "persistent_legend": {
+    "Name": "Persistent Legend",
+    "Description": "Allows a Legend to remain active permanently, instead of disappearing at the end of a scene.",
+    "Pool": "Wits + Academics",
+    "Source": "FoH 103",
+    "Type": "Mundane"
+  },
+  "quick_change": {
+    "Name": "Quick Change",
+    "Description": "Instantly transforms the demon's outfit to meet desired specifications.",
+    "Pool": "Manipulation + Subterfuge",
+    "Source": "DtD 146",
+    "Type": "Mundane"
+  },
+  "the_voting_dead": {
+    "Name": "The Voting Dead",
+    "Description": "Assume the identity of a dead person, which for the period which the Embed is active replaces the real identity of your cover.",
+    "Pool": "Manipulation + Politics",
+    "Source": "FoH 103",
+    "Type": "Mundane"
+  },
+  "unperson": {
+    "Name": "Unperson",
+    "Description": "For one scene, strips a victim of their ability to identify themselves to anyone, even those intimately familiar with them.",
+    "Pool": "Manipulation + Subterfuge - Composure",
+    "Source": "DtD 147",
+    "Type": "Mundane"
+  },
+  "wave_function_collapse": {
+    "Name": "Wave Function Collapse",
+    "Description": "Traps a supernatural being in their current form, preventing them from changing. Demon (or non-human supernatural) forms cannot turn into humans, human-forms cannot turn into demon forms temporarily and Demons in cover cannot separate from their cover in any way.",
+    "Pool": "Dexterity + Brawl Vs. Stamina + Supernatural Tolerance",
+    "Source": "FoH 104",
+    "Type": "Mundane"
+  },
+  "without_a_trace": {
+    "Name": "Without a Trace",
+    "Description": "Vaporizes all physical traces of the demon from a scene.",
+    "Pool": "Manipulation + Investigation",
+    "Source": "DtD 147",
+    "Type": "Mundane"
+  },
+  "you_can_tell_me": {
+    "Name": "You Can Tell Me",
+    "Description": "Causes the target to speak nothing but the whole truth about a subject.",
+    "Pool": "Manipulation + Empathy - Composure",
+    "Source": "FoH 105",
+    "Type": "Mundane"
+  },
+  "across_a_crowded_room": {
+    "Name": "Across a Crowded Room",
+    "Description": "Enables the demon to whisper to any target or targets he can see.",
+    "Pool": "Manipulation + Subterfuge",
+    "Source": "DtD 148",
+    "Type": "Vocal"
+  },
+  "animal_communication": {
+    "Name": "Animal Communication",
+    "Description": "Issues a task to an animal.",
+    "Pool": "Manipulation + Animal Ken",
+    "Source": "DtD 148",
+    "Type": "Vocal"
+  },
+  "animal_messenger": {
+    "Name": "Animal Messenger",
+    "Description": "Tasks an animal with delivering a message to a specific person, who will be able to comprehend the creature's expression.",
+    "Pool": "Manipulation + Animal Ken",
+    "Source": "DtD 148",
+    "Type": "Vocal"
+  },
+  "borrowed_expertise": {
+    "Name": "Borrowed Expertise",
+    "Description": "Allows the demon to lend out their skill dots and specialties to other people.",
+    "Pool": "Manipulation + [Granted Skill]",
+    "Source": "DtD 149",
+    "Type": "Vocal"
+  },
+  "common_misconception": {
+    "Name": "Common Misconception",
+    "Description": "Causes a target to operate based on faulty information that \"everyone knows\", penalizing a skill roll.",
+    "Pool": "Manipulation + Science",
+    "Source": "DtD 149",
+    "Type": "Vocal"
+  },
+  "eavesdrop": {
+    "Name": "Eavesdrop",
+    "Description": "Enables the demon to understand any conversation he can see.",
+    "Pool": "Wits + Empathy",
+    "Source": "DtD 149",
+    "Type": "Vocal"
+  },
+  "everybody_knows": {
+    "Name": "Everybody Knows",
+    "Description": "Sparks a vile rumor about a victim, which rapidly spreads memetically.",
+    "Pool": "Manipulation + Subterfuge",
+    "Source": "DtD 150",
+    "Type": "Vocal"
+  },
+  "find_the_leak": {
+    "Name": "Find the Leak",
+    "Description": "Informs the demon of who in a group would most desire to talk about a particular topic, and grants bonuses to encourage them to do so.",
+    "Pool": "Wits + Empathy",
+    "Source": "DtD 150",
+    "Type": "Vocal"
+  },
+  "freudian_slip": {
+    "Name": "Freudian Slip",
+    "Description": "Forces a mortal to make an honest and heartfelt response to the last thing the demon said.",
+    "Pool": "Manipulation + Empathy (-Composure)",
+    "Source": "DtD 150",
+    "Type": "Vocal"
+  },
+  "heart's_desire": {
+    "Name": "Heart's Desire",
+    "Description": "Informs the demon of the target's Aspirations, Virtue, and Vice.",
+    "Pool": "Wits + Empathy - Composure",
+    "Source": "DtD 151",
+    "Type": "Vocal"
+  },
+  "imagine": {
+    "Name": "Imagine",
+    "Description": "Causes a spark of clarity in humans that allows them to see the world free of the God Machine and grants conditions appropriate to such a life-changing event.",
+    "Pool": "Manipulation + Persuasion",
+    "Source": "FoH 105",
+    "Type": "Vocal"
+  },
+  "the_look": {
+    "Name": "The Look",
+    "Description": "When in eye contact, gives a look that causes total body paralysis while maintained. The victim will slowly die of organ failure or pass out if The Look is maintained for an extended period, but external damage breaks the effect.",
+    "Pool": "Manipulation + Intimidation - Stamina",
+    "Source": "FoH 105",
+    "Type": "Vocal"
+  },
+  "loose_lips": {
+    "Name": "Loose Lips",
+    "Description": "Use social activity to cause a target to speak freely about information that they would not otherwise share, removing Doors. The victim passes out with only a hazy memory of the interaction afterwards.",
+    "Pool": "Manipulation + Socialise - Stamina",
+    "Source": "FoH 106",
+    "Type": "Vocal"
+  },
+  "marco_polo": {
+    "Name": "Marco Polo",
+    "Description": "The demon whispers a short tune or phrase which anyone present is forced to complete, ruining stealth and ambushes.",
+    "Pool": "Manipulation + Persuasion - Composure",
+    "Source": "DtD 151",
+    "Type": "Vocal"
+  },
+  "mercury_retrograde": {
+    "Name": "Mercury Retrograde",
+    "Description": "Forces a miscommunication in a conversation between two targets, which the demon then gets bonuses to exploit.",
+    "Pool": "Manipulation + Subterfuge - Wits",
+    "Source": "DtD 151",
+    "Type": "Vocal"
+  },
+  "muse": {
+    "Name": "Muse",
+    "Description": "Instills an idea in a target, and grants the demon bonuses to encourage the target to act on it.",
+    "Pool": "Manipulation + Expression - Resolve",
+    "Source": "DtD 152",
+    "Type": "Vocal"
+  },
+  "the_only_word_that_matters": {
+    "Name": "The Only Word That Matters",
+    "Description": "Causes a person to only say what the Demon wants them to say. Can either apply generally to everything the target says, or can be coded for specific trigger events.",
+    "Pool": "Manipulation + Expression - Composure",
+    "Source": "FoH 106",
+    "Type": "Vocal"
+  },
+  "recurring_hallucinations": {
+    "Name": "Recurring Hallucinations",
+    "Description": "Curses a victim with nightmarish hallucinations that last for days, penalizing all Mental and Social rolls and forcing regular breaking points.",
+    "Pool": "Manipulation + Occult - Resolve",
+    "Source": "DtD 152",
+    "Type": "Vocal"
+  },
+  "remote_link-up": {
+    "Name": "Remote Link-Up",
+    "Description": "Allows a Demon to create sensory links between another individual or a group of individual that allows them to share their natural senses (e.g. vision or hearing.)",
+    "Pool": "Wits + Socialise",
+    "Source": "FoH 107",
+    "Type": "Vocal"
+  },
+  "rhetoric": {
+    "Name": "Rhetoric",
+    "Description": "Causes the target to temporarily support the Demon's argument in a debate, removing a Door and being temporarily sympathetic to the Demon's point of view.",
+    "Pool": "Wits + Subterfuge",
+    "Source": "FoH 107",
+    "Type": "Vocal"
+  },
+  "social_dynamics": {
+    "Name": "Social Dynamics",
+    "Description": "Grants the demon knowledge of the dynamics and status of all those within a group, granting bonuses to social interactions that exploits this knowledge.",
+    "Pool": "Wits + Socialize",
+    "Source": "DtD 153",
+    "Type": "Vocal"
+  },
+  "social_engineering": {
+    "Name": "Social Engineering",
+    "Description": "Manipulates a target into divulging information that they shouldn't under normal circumstances. The information also provides a +1 bonus to a later, related Computer, Investigation or Persuasion roll.",
+    "Pool": "Manipulation + Persuasion",
+    "Source": "FoH 107",
+    "Type": "Vocal"
+  },
+  "special_message": {
+    "Name": "Special Message",
+    "Description": "Instills a secret message into a medium such as a song or a work of art, intended for a particular recipient, who will understand the message when they are exposed to the media in question.",
+    "Pool": "Manipulation + Expression",
+    "Source": "DtD 153",
+    "Type": "Vocal"
+  },
+  "strength_through_adversity": {
+    "Name": "Strength Through Adversity",
+    "Description": "Causes a target to suffer incredible hardship that lasts for several days and escalates over that period. Once the effect ends, the hardship disappears but the target may come out ahead having laboured under conditions that are resolved.",
+    "Pool": "Manipulation + Intimidation - Resolve",
+    "Source": "FoH 108",
+    "Type": "Vocal"
+  },
+  "sum_of_all_fears": {
+    "Name": "Sum of all Fears",
+    "Description": "Learn a target's fears, breaking points, loved ones, derangements or Conditions that could be exploited to scare them.",
+    "Pool": "Wits + Empathy - Composure",
+    "Source": "FoH 108",
+    "Type": "Vocal"
+  },
+  "tower_of_babel": {
+    "Name": "Tower of Babel",
+    "Description": "Curses all those present on the scene with the inability to communicate with anyone else for a few turns.",
+    "Pool": "Manipulation + Socialize",
+    "Source": "DtD 154",
+    "Type": "Vocal"
+  },
+  "trick_of_the_light": {
+    "Name": "Trick of the Light",
+    "Description": "Causes a single target to see a fleeting and vague illusion of the demon's specifications.",
+    "Pool": "Manipulation + Investigation - Wits",
+    "Source": "DtD 154",
+    "Type": "Vocal"
+  },
+  "trust_no_one": {
+    "Name": "Trust No One",
+    "Description": "Inflicts a victim with crippling paranoia, preventing them from making use of merits that depend on others, or even to interact casually with friends.",
+    "Pool": "Manipulation + Subterfuge - Resolve",
+    "Source": "DtD 155",
+    "Type": "Vocal"
+  },
+  "voice_of_the_machine": {
+    "Name": "Voice of the Machine",
+    "Description": "Allows the demon to listen in to what the God-Machine is saying in an area, which may inform what angels are up to or other such knowledge.",
+    "Pool": "Wits + Craft",
+    "Source": "DtD 155",
+    "Type": "Vocal"
+  },
+  "vox": {
+    "Name": "Vox",
+    "Description": "Change your voice to perfectly imitate any other voice or mimic other sounds previously heard as the Demon sees fit.",
+    "Pool": "Manipulation + Expression",
+    "Source": "FoH 109",
+    "Type": "Vocal"
+  }
+}
