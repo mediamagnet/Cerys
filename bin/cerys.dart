@@ -28,8 +28,8 @@ Future main(List<String> arguments) async {
       ..registerCommandGroup(CommandGroup(name: 'codex')
         ..registerSubCommand('embed', codex.embedCommand)
         ..registerSubCommand('exploit', codex.exploitCommand)
-        ..registerSubCommand('cruac', codex.cruacCommand)
-        ..registerSubCommand('demon_forms', codex.demonFormsCommand))
+        ..registerSubCommand('demon forms', codex.demonFormsCommand)
+        ..registerSubCommand('cruac', codex.cruacCommand))
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand);
