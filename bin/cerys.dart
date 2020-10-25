@@ -30,7 +30,7 @@ Future main(List<String> arguments) async {
         ..registerSubCommand('exploit', codex.exploitCommand)
         ..registerSubCommand('demon forms', codex.demonFormsCommand)
         ..registerSubCommand('cruac', codex.cruacCommand)
-        ..registerSubCommand('gift', codex.giftCommand))
+        ..registerSubCommand('gifts', codex.giftCommand))
       ..registerCommand('join', joinChannelCommand)
       ..registerCommand('leave', leaveChannelCommand)
       ..registerCommand('help', helpCommand)
