@@ -130,3 +130,36 @@ Future<void> demonFormsCommand(CommandContext ctx, String content) async {
   await ctx.message.delete();
   await ctx.reply(embed: embed);
 }
+
+Future<void> giftCommand(CommandContext ctx, String content) async {
+  final color = DiscordColor.fromRgb(
+      Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
+
+  var unescape = HtmlUnescape();
+  Map wodembed = json.decode(await File('codex/cruac.json').readAsString());
+  var keyword = htmlEscape.convert(content.replaceAll('..codex gifts ', '').toLowerCase().replaceAll(' ', '_'));
+  print(keyword);
+  var obj = wodembed[keyword];
+  obj['facet'] = unescape.convert(obj['facet']);
+  print(obj);
+
+  var embed = EmbedBuilder()
+    ..addAuthor((author) {
+      author.name = unescape.convert(obj['facet']);
+      author.iconUrl = 'https://cdn.discordapp.com/emojis/269519323201142784.png?v=1';
+      author.url = 'https://github.com/mediamagnet/cerys';
+    })
+    ..addFooter((footer) {
+      footer.text =
+      'Cerys v0.0.1';
+    })
+    ..addField(name: 'Description', content: obj['description'])
+    ..addField(name: 'Rank', content: obj['rank'], inline: true)
+    ..addField(name: 'Pool', content: obj['pool'])
+    ..addField(name: 'Duration', content: obj['duration'], inline: true)
+    ..addField(name: 'Type', content: obj['type'], inline: true)
+    ..addField(name:  'Reference', content: obj['reference']);
+
+  await ctx.message.delete();
+  await ctx.reply(embed: embed);
+}

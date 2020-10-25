@@ -29,7 +29,10 @@ Future main(List<String> arguments) async {
         ..registerSubCommand('embed', codex.embedCommand)
         ..registerSubCommand('exploit', codex.exploitCommand)
         ..registerSubCommand('demon forms', codex.demonFormsCommand)
-        ..registerSubCommand('cruac', codex.cruacCommand))
+        ..registerSubCommand('cruac', codex.cruacCommand)
+        ..registerSubCommand('gift', codex.giftCommand))
+      ..registerCommand('join', joinChannelCommand)
+      ..registerCommand('leave', leaveChannelCommand)
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand);
@@ -141,6 +144,23 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
 Future<void> shutdownCommand(CommandContext ctx, String content) async {
   Process.killPid(pid);
 }
+
+Future<void> joinChannelCommand(CommandContext ctx, String content) async {
+  final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
+  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
+
+  shard.changeVoiceState(guildId, Snowflake(content.split(" ").last));
+  await ctx.reply(content: "Joined to channel!");
+}
+
+Future<void> leaveChannelCommand(CommandContext ctx, String content) async {
+  final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
+  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
+
+  shard.changeVoiceState(guildId, null);
+  await ctx.reply(content: "Left channel!");
+}
+
 
 Future<bool> checkForAdmin(CommandContext context) async {
   if (ownerID != null) {
