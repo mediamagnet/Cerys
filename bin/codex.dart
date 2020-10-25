@@ -136,7 +136,7 @@ Future<void> giftCommand(CommandContext ctx, String content) async {
       Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
 
   var unescape = HtmlUnescape();
-  Map wodembed = json.decode(await File('codex/cruac.json').readAsString());
+  Map wodembed = json.decode(await File('codex/gifts.json').readAsString());
   var keyword = htmlEscape.convert(content.replaceAll('..codex gifts ', '').toLowerCase().replaceAll(' ', '_'));
   print(keyword);
   var obj = wodembed[keyword];
