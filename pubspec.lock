@@ -106,6 +106,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2+dart2"
+  dart_dice_parser:
+    dependency: "direct main"
+    description:
+      name: dart_dice_parser
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   dotenv:
     dependency: "direct main"
     description:
