@@ -8,7 +8,6 @@ import 'dart:io' show Process, ProcessInfo, pid, File;
 import 'utils.dart' as utils;
 import 'codex.dart' as codex;
 
-
 var ownerID;
 // ignore: prefer_single_quotes
 
@@ -33,6 +32,7 @@ Future main(List<String> arguments) async {
         ..registerSubCommand('gifts', codex.giftCommand))
       ..registerCommand('join', joinChannelCommand)
       ..registerCommand('leave', leaveChannelCommand)
+      ..registerCommand('test', testCommand)
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand);
@@ -40,6 +40,10 @@ Future main(List<String> arguments) async {
     print(e);
   }
   return cfg;
+}
+
+Future<void> testCommand(CommandContext ctx, String content) async {
+  print(await utils.wodscrape(content));
 }
 
 Future<void> helpCommand(CommandContext ctx, String content) async {
@@ -82,7 +86,6 @@ Future<void> pingCommand(CommandContext ctx, String content) async {
   embed
     ..replaceField(
         name: 'Message roundup time',
-
         content: '${stopwatch.elapsedMilliseconds} ms',
         inline: true);
 
@@ -147,7 +150,8 @@ Future<void> shutdownCommand(CommandContext ctx, String content) async {
 
 Future<void> joinChannelCommand(CommandContext ctx, String content) async {
   final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
-  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
+  final shard = ctx.client.shardManager.shards
+      .firstWhere((element) => element.guilds.contains(guildId));
 
   shard.changeVoiceState(guildId, Snowflake(content.split(" ").last));
   await ctx.reply(content: "Joined to channel!");
@@ -155,12 +159,12 @@ Future<void> joinChannelCommand(CommandContext ctx, String content) async {
 
 Future<void> leaveChannelCommand(CommandContext ctx, String content) async {
   final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
-  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
+  final shard = ctx.client.shardManager.shards
+      .firstWhere((element) => element.guilds.contains(guildId));
 
   shard.changeVoiceState(guildId, null);
   await ctx.reply(content: "Left channel!");
 }
-
 
 Future<bool> checkForAdmin(CommandContext context) async {
   if (ownerID != null) {

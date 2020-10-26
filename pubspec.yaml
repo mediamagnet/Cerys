@@ -12,7 +12,6 @@ dependencies:
   nyxx_commander: ^1.0.0
   dotenv: ^2.0.0
   toml: ^0.6.0
-  dart_dice_parser: ^2.0.0
   html: ^0.13.3+3
   http: ^0.12.0
   html_unescape: ^1.0.2
