@@ -3,14 +3,23 @@ import 'package:nyxx_commander/commander.dart'
     show CommandContext, CommandGroup, Commander;
 import 'package:toml/loader/fs.dart';
 import 'dart:async';
+import 'dart:convert';
 import 'dart:math' show Random;
-import 'dart:io' show Process, ProcessInfo, pid, File;
+import 'dart:io' show Process, ProcessInfo, pid;
 import 'utils.dart' as utils;
 import 'codex.dart' as codex;
 
 
 var ownerID;
 // ignore: prefer_single_quotes
+
+var launch = DateTime.now();
+
+extension StringExtension on String {
+  String capitalize() {
+    return '${this[0].toUpperCase()}${substring(1)}';
+  }
+}
 
 Future main(List<String> arguments) async {
   FilesystemConfigLoader.use();
@@ -22,6 +31,11 @@ Future main(List<String> arguments) async {
 
     final bot = Nyxx(cfg['Bot']['Token']!);
 
+    bot.onReady.listen((ReadyEvent e) {
+      print('Connected to discord.');
+      ClientOptions(initialPresence: PresenceBuilder.of(status: UserStatus.dnd, since: launch));
+    });
+
     Commander(bot, prefix: cfg['Bot']['Prefix'])
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
         ..registerSubCommand('shutdown', shutdownCommand))
@@ -31,11 +45,11 @@ Future main(List<String> arguments) async {
         ..registerSubCommand('demon forms', codex.demonFormsCommand)
         ..registerSubCommand('cruac', codex.cruacCommand)
         ..registerSubCommand('gifts', codex.giftCommand))
-      ..registerCommand('join', joinChannelCommand)
-      ..registerCommand('leave', leaveChannelCommand)
+      ..registerCommand('test', testCommand)
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand);
+
   } catch (e) {
     print(e);
   }
@@ -101,7 +115,7 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
     })
     ..addFooter((footer) {
       footer.text =
-          'Nyxx 1.0.0 | Shard [${ctx.shardId + 1}] of [${ctx.client.shards}] | ${utils.dartVersion}';
+      'Nyxx 1.0.0 | Shard [${ctx.shardId + 1}] of [${ctx.client.shards}] | ${utils.dartVersion}';
     })
     ..color = color
     ..addField(
@@ -109,7 +123,7 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
     ..addField(
         name: 'DartVM memory usage',
         content:
-            '${(ProcessInfo.currentRss / 1024 / 1024).toStringAsFixed(2)} MB',
+        '${(ProcessInfo.currentRss / 1024 / 1024).toStringAsFixed(2)} MB',
         inline: true)
     ..addField(
         name: 'Created at', content: ctx.client.app.createdAt, inline: true)
@@ -145,22 +159,63 @@ Future<void> shutdownCommand(CommandContext ctx, String content) async {
   Process.killPid(pid);
 }
 
-Future<void> joinChannelCommand(CommandContext ctx, String content) async {
-  final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
-  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
 
-  shard.changeVoiceState(guildId, Snowflake(content.split(" ").last));
-  await ctx.reply(content: "Joined to channel!");
+Future<void> testCommand(CommandContext ctx, String content) async {
+  var page = content.replaceAll('..test ', '').split(' ').first;
+
+  var keyterm = content.replaceAll('..test ${page} ', '');
+  var output = await utils.wodScrape(page);
+  var embed = EmbedBuilder();
+  final color = DiscordColor.fromRgb(
+      Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
+
+  Map wodembed = jsonDecode(output);
+
+  // var keyword = htmlEscape.convert(keyterm);
+  print(keyterm);
+  var obj = wodembed[keyterm];
+  print(obj.keys);
+
+  if (obj.keys.elementAt(0) == 'Type') {
+    embed = EmbedBuilder()
+      ..addAuthor((author) {
+        author.name = obj.values.elementAt(1);
+        author.iconUrl =
+        'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
+        author.url = 'https://github.com/mediamagnet/cerys';
+      })
+      ..addFooter((footer) {
+        footer.text =
+        'Cerys v0.0.1';
+      })
+      ..color = color
+      ..addField(name: '${obj.keys.elementAt(2)}:', content: obj.values.elementAt(2))
+      ..addField(name: '${obj.keys.elementAt(3)}:', content: obj.values.elementAt(3), inline: true)
+      ..addField(name: '${obj.keys.elementAt(0)}:', content: obj.values.elementAt(0), inline: true)
+      ..addField(name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
+  } else {
+    embed = EmbedBuilder()
+      ..addAuthor((author) {
+        author.name = obj.values.elementAt(0);
+        author.iconUrl =
+        'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
+        author.url = 'https://github.com/mediamagnet/cerys';
+      })
+      ..addFooter((footer) {
+        footer.text =
+        'Cerys v0.0.1';
+      })
+      ..color = color
+      ..addField(name: '${obj.keys.elementAt(1)}:', content: obj.values.elementAt(1))
+      ..addField(name: '${obj.keys.elementAt(2)}:', content: obj.values.elementAt(2), inline: true)
+      ..addField(name: '${obj.keys.elementAt(3)}:', content: obj.values.elementAt(3), inline: true)
+      ..addField(name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
+  }
+
+  await ctx.message.delete();
+  await ctx.reply(embed: embed);
+
 }
-
-Future<void> leaveChannelCommand(CommandContext ctx, String content) async {
-  final guildId = (ctx.message.channel as CachelessGuildChannel).guildId;
-  final shard = ctx.client.shardManager.shards.firstWhere((element) => element.guilds.contains(guildId));
-
-  shard.changeVoiceState(guildId, null);
-  await ctx.reply(content: "Left channel!");
-}
-
 
 Future<bool> checkForAdmin(CommandContext context) async {
   if (ownerID != null) {

@@ -84,6 +84,7 @@ Future<void> cruacCommand(CommandContext ctx, String content) async {
   print(obj);
 
   var embed = EmbedBuilder()
+    ..color = color
     ..addAuthor((author) {
       author.name = unescape.convert(obj['rite']);
       author.iconUrl = 'https://cdn.discordapp.com/emojis/769333984874070026.png?v=1';
@@ -93,10 +94,10 @@ Future<void> cruacCommand(CommandContext ctx, String content) async {
       footer.text =
       'Cerys v0.0.1';
     })
-  ..addField(name: 'Description', content: obj['description'])
-  ..addField(name: 'Target', content: obj['target'], inline: true)
-  ..addField(name: 'Opposition', content: obj['opposition'], inline: true)
-  ..addField(name: 'source', content: obj['source']);
+    ..addField(name: 'Description', content: obj['description'])
+    ..addField(name: 'Target', content: obj['target'], inline: true)
+    ..addField(name: 'Opposition', content: obj['opposition'], inline: true)
+    ..addField(name: 'source', content: obj['source']);
 
   await ctx.message.delete();
   await ctx.reply(embed: embed);
@@ -115,6 +116,7 @@ Future<void> demonFormsCommand(CommandContext ctx, String content) async {
   print(obj);
 
   var embed = EmbedBuilder()
+    ..color = color
     ..addAuthor((author) {
       author.name = unescape.convert(obj['modification']);
       author.iconUrl = 'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
@@ -144,6 +146,7 @@ Future<void> giftCommand(CommandContext ctx, String content) async {
   print(obj);
 
   var embed = EmbedBuilder()
+    ..color = color
     ..addAuthor((author) {
       author.name = unescape.convert(obj['facet']);
       author.iconUrl = 'https://cdn.discordapp.com/emojis/269519323201142784.png?v=1';
