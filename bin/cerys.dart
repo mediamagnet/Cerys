@@ -5,7 +5,7 @@ import 'package:toml/loader/fs.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:math' show Random;
-import 'dart:io' show Process, ProcessInfo, pid;
+import 'dart:io' show Process, ProcessInfo, pid, sleep;
 import 'utils.dart' as utils;
 import 'codex.dart' as codex;
 
@@ -33,8 +33,14 @@ Future main(List<String> arguments) async {
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
-      ClientOptions(initialPresence: PresenceBuilder.of(status: UserStatus.dnd, since: launch));
+
+      bot.setPresence(PresenceBuilder.of(game: Activity.of(
+          "with The God Machine's Gears", type: ActivityType.game,
+          url: 'https://github.com/mediamagnet/cerys')));
     });
+
+
+
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
@@ -161,9 +167,9 @@ Future<void> shutdownCommand(CommandContext ctx, String content) async {
 
 
 Future<void> testCommand(CommandContext ctx, String content) async {
-  var page = content.replaceAll('..test ', '').split(' ').first;
 
-  var keyterm = content.replaceAll('..test ${page} ', '');
+  var page = content.replaceAll('||test ', '').split(' ').first;
+  var keyterm = content.replaceAll('||test ${page} ', '');
   var output = await utils.wodScrape(page);
   var embed = EmbedBuilder();
   final color = DiscordColor.fromRgb(
@@ -175,6 +181,7 @@ Future<void> testCommand(CommandContext ctx, String content) async {
   print(keyterm);
   var obj = wodembed[keyterm];
   print(obj.keys);
+  print(obj);
 
   if (obj.keys.elementAt(0) == 'Type') {
     embed = EmbedBuilder()

@@ -38,6 +38,8 @@ Future wodScrape(String page) async {
   var itemMap = <dynamic, Map<dynamic, dynamic>>{};
   var headerMap = <String>[];
   var section = '';
+  var n = 0;
+
   for (var row in tables[0].children[0].children) {
     if (headerMap.isEmpty) {
       for (var hitem in row.children) {
@@ -45,21 +47,39 @@ Future wodScrape(String page) async {
       }
       continue;
     }
+
     if (row.children.length <= 2) {
       section = row.text.trim();
       continue;
     }
+
     var rowMap = <String, String>{};
+
+
+
     if (section != '') {
       rowMap['Type'] = section;
-
     }
+
+    print(headerMap);
+
     for (var item in row.children.asMap().entries) {
       if (item.value.text.trim() != '') {
         rowMap[headerMap[item.key]] = item.value.text.trim();
       }
+      // print('header: ${headerMap}');
+      // print('row: ${itemMap}');
+      if (headerMap[0] == rowMap[0]) {
+        // print(n);
+        // print('header: ${headerMap[0]}');
+        // print('row: ${rowMap[0]}');
+        while (n <= rowMap.length) {
+          headerMap.add('col${n}');
+        };
+      }
     }
     itemMap[rowMap[headerMap[0]]] = rowMap;
+
   }
   // return itemMap;
   return jsonEncode(itemMap);
