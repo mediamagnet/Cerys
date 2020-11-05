@@ -1,457 +1,464 @@
 {
+  "agoraphobic": {
+    "Name": "Agoraphobic",
+    "Persistent": false,
+    "Effect": "You avoid open spaces and crowds.",
+    "Source": "PTC 2e 306",
+    "Type": "Mental Conditions"
+  },
   "addled": {
-    "agoraphobic": "Addled",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Your memories are jumbled and confused.",
-    "ptc_2e_306": "GTS 2e 299",
-    "type": "Mental Conditions"
+    "Name": "Addled",
+    "Persistent": false,
+    "Effect": "Your memories are jumbled and confused.",
+    "Source": "GTS 2e 299",
+    "Type": "Mental Conditions"
   },
   "amnesia": {
-    "agoraphobic": "Amnesia",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "You've lost a large swath of memory.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Mental Conditions"
+    "Name": "Amnesia",
+    "Persistent": true,
+    "Effect": "You've lost a large swath of memory.",
+    "Source": "CofD 288",
+    "Type": "Mental Conditions"
   },
   "broken": {
-    "agoraphobic": "Broken",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Your will is broken and you back down from everything.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Mental Conditions"
+    "Name": "Broken",
+    "Persistent": true,
+    "Effect": "Your will is broken and you back down from everything.",
+    "Source": "CofD 288",
+    "Type": "Mental Conditions"
   },
   "captivated": {
-    "agoraphobic": "Captivated",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're heavily preoccupied with something and can't split your attention.",
-    "ptc_2e_306": "DTD 211",
-    "type": "Mental Conditions"
+    "Name": "Captivated",
+    "Persistent": false,
+    "Effect": "You're heavily preoccupied with something and can't split your attention.",
+    "Source": "DTD 211",
+    "Type": "Mental Conditions"
   },
   "confused": {
-    "agoraphobic": "Confused",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You can't think straight.",
-    "ptc_2e_306": "VTR 2e 302",
-    "type": "Mental Conditions"
+    "Name": "Confused",
+    "Persistent": false,
+    "Effect": "You can't think straight.",
+    "Source": "VTR 2e 302",
+    "Type": "Mental Conditions"
   },
   "cowed": {
-    "agoraphobic": "Cowed",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Someone has weakened you through a display of dominance.",
-    "ptc_2e_306": "WTF 2e 307",
-    "type": "Mental Conditions"
+    "Name": "Cowed",
+    "Persistent": false,
+    "Effect": "Someone has weakened you through a display of dominance.",
+    "Source": "WTF 2e 307",
+    "Type": "Mental Conditions"
   },
   "delusional": {
-    "agoraphobic": "Delusional",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Paranoid delusions dominate your behavior.",
-    "ptc_2e_306": "VTR 2e 302",
-    "type": "Mental Conditions"
+    "Name": "Delusional",
+    "Persistent": true,
+    "Effect": "Paranoid delusions dominate your behavior.",
+    "Source": "VTR 2e 302",
+    "Type": "Mental Conditions"
   },
   "demoralized": {
-    "agoraphobic": "Demoralized",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Failure dampens your fighting initiative.",
-    "ptc_2e_306": "WTF 2e 307",
-    "type": "Mental Conditions"
+    "Name": "Demoralized",
+    "Persistent": false,
+    "Effect": "Failure dampens your fighting initiative.",
+    "Source": "WTF 2e 307",
+    "Type": "Mental Conditions"
   },
   "detached": {
-    "agoraphobic": "Detached",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "You've run with occult circles for so long you've forgotten how to interact with humans.",
-    "ptc_2e_306": "HD 123",
-    "type": "Mental Conditions"
+    "Name": "Detached",
+    "Persistent": true,
+    "Effect": "You've run with occult circles for so long you've forgotten how to interact with humans.",
+    "Source": "HD 123",
+    "Type": "Mental Conditions"
   },
   "deprived": {
-    "agoraphobic": "Deprived",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "You're weakened by an unfed addiction.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Mental Conditions"
+    "Name": "Deprived",
+    "P: "○",
+    "Effect": "You're weakened by an unfed addiction.",
+    "Source": "CofD 288",
+    "Type": "Mental Conditions"
   },
   "disoriented": {
-    "agoraphobic": "Disoriented",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've lost equilibrium and need an opportunity to recenter.",
-    "ptc_2e_306": "DTD 211",
-    "type": "Mental Conditions"
+    "Name": "Disoriented",
+    "Persistent": false,
+    "Effect": "You've lost equilibrium and need an opportunity to recenter.",
+    "Source": "DTD 211",
+    "Type": "Mental Conditions"
   },
   "dissociation": {
-    "agoraphobic": "Dissociation",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Surreality plagues you with doubts of your own experiences.",
-    "ptc_2e_306": "CTL 2e 336",
-    "type": "Mental Conditions"
+    "Name": "Dissociation",
+    "Persistent": false,
+    "Effect": "Surreality plagues you with doubts of your own experiences.",
+    "Source": "CTL 2e 336",
+    "Type": "Mental Conditions"
   },
   "distracted": {
-    "agoraphobic": "Distracted",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're buffeted from all sides, splitting your attention terribly.",
-    "ptc_2e_306": "VTR 2e 302",
-    "type": "Mental Conditions"
+    "Name": "Distracted",
+    "Persistent": false,
+    "Effect": "You're buffeted from all sides, splitting your attention terribly.",
+    "Source": "VTR 2e 302",
+    "Type": "Mental Conditions"
   },
   "doubtful": {
-    "agoraphobic": "Doubtful",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "You've lost confidence in all but your most secure actions.",
-    "ptc_2e_306": "HMR 147",
-    "type": "Mental Conditions"
+    "Name": "Doubtful",
+    "Persistent": true,
+    "Effect": "You've lost confidence in all but your most secure actions.",
+    "Source": "HMR 147",
+    "Type": "Mental Conditions"
   },
   "emboldened": {
-    "agoraphobic": "Emboldened",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "An uninhibited atmosphere makes you impulsive and prone to temptation.",
-    "ptc_2e_306": "HMR 150",
-    "type": "Mental Conditions"
+    "Name": "Emboldened",
+    "Persistent": false,
+    "Effect": "An uninhibited atmosphere makes you impulsive and prone to temptation.",
+    "Source": "HMR 150",
+    "Type": "Mental Conditions"
   },
   "faith": {
-    "agoraphobic": "Faith",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Your trust in the next world can be exploited by angelic forces.",
-    "ptc_2e_306": "DSG 81",
-    "type": "Mental Conditions"
+    "Name": "Faith",
+    "Persistent": true,
+    "Effect": "Your trust in the next world can be exploited by angelic forces.",
+    "Source": "DSG 81",
+    "Type": "Mental Conditions"
   },
   "frightened": {
-    "agoraphobic": "Frightened",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're terrified and moved to panic and flee.",
-    "ptc_2e_306": "VTR 2e 304",
-    "type": "Mental Conditions"
+    "Name": "Frightened",
+    "Persistent": false,
+    "Effect": "You're terrified and moved to panic and flee.",
+    "Source": "VTR 2e 304",
+    "Type": "Mental Conditions"
   },
   "fugue": {
-    "agoraphobic": "Fugue",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "You've shied away from trauma by shutting out the experience.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Fugue",
+    "Persistent": true,
+    "Effect": "You've shied away from trauma by shutting out the experience.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "guilty": {
-    "agoraphobic": "Guilty",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Feelings of remorse leave you emotionally vulnerable.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Guilty",
+    "Persistent": false,
+    "Effect": "Feelings of remorse leave you emotionally vulnerable.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "informed": {
-    "agoraphobic": "Informed",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're well equipped to tackle a given subject.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Informed",
+    "Persistent": false,
+    "Effect": "You're well equipped to tackle a given subject.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "inspired": {
-    "agoraphobic": "Inspired",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "The spirit moves you to confident action.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Inspired",
+    "Persistent": false,
+    "Effect": "The spirit moves you to confident action.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "lost": {
-    "agoraphobic": "Lost",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've lost your sense of place and need to reorient.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Lost",
+    "Persistent": false,
+    "Effect": "You've lost your sense of place and need to reorient.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "lost_tracker": {
-    "agoraphobic": "Lost Tracker",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Frustrations on a hunt leave your tracking skills sloppy and halfhearted.",
-    "ptc_2e_306": "WTF 2e 308",
-    "type": "Mental Conditions"
+    "Name": "Lost Tracker",
+    "Persistent": false,
+    "Effect": "Frustrations on a hunt leave your tracking skills sloppy and halfhearted.",
+    "Source": "WTF 2e 308",
+    "Type": "Mental Conditions"
   },
   "madness": {
-    "agoraphobic": "Madness",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Unnatural horror has shattered your ability to process life.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Mental Conditions"
+    "Name": "Madness",
+    "Persistent": true,
+    "Effect": "Unnatural horror has shattered your ability to process life.",
+    "Source": "CofD 289",
+    "Type": "Mental Conditions"
   },
   "obsession": {
-    "agoraphobic": "Obsession",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "Something controls your attention and distracts from all else.",
-    "ptc_2e_306": "CofD 290",
-    "type": "Mental Conditions"
+    "Name": "Obsession",
+    "P: "○",
+    "Effect": "Something controls your attention and distracts from all else.",
+    "Source": "CofD 290",
+    "Type": "Mental Conditions"
   },
   "shaken": {
-    "agoraphobic": "Shaken",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're shocked or deeply rattled, unsteadying your hand.",
-    "ptc_2e_306": "CofD 290",
-    "type": "Mental Conditions"
+    "Name": "Shaken",
+    "Persistent": false,
+    "Effect": "You're shocked or deeply rattled, unsteadying your hand.",
+    "Source": "CofD 290",
+    "Type": "Mental Conditions"
   },
   "sleepwalking": {
-    "agoraphobic": "Sleepwalking",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Sleep and wakefulness blur, and you suffer from lost time and poor recollection.",
-    "ptc_2e_306": "CTL 2e 344",
-    "type": "Mental Conditions"
+    "Name": "Sleepwalking",
+    "Persistent": true,
+    "Effect": "Sleep and wakefulness blur, and you suffer from lost time and poor recollection.",
+    "Source": "CTL 2e 344",
+    "Type": "Mental Conditions"
   },
   "spooked": {
-    "agoraphobic": "Spooked",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Otherworldly wonder moves you unwisely.",
-    "ptc_2e_306": "CofD 291",
-    "type": "Mental Conditions"
+    "Name": "Spooked",
+    "Persistent": false,
+    "Effect": "Otherworldly wonder moves you unwisely.",
+    "Source": "CofD 291",
+    "Type": "Mental Conditions"
   },
   "steadfast": {
-    "agoraphobic": "Steadfast",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Your resolve to act is steeled and ready.",
-    "ptc_2e_306": "CofD 291",
-    "type": "Mental Conditions"
+    "Name": "Steadfast",
+    "Persistent": false,
+    "Effect": "Your resolve to act is steeled and ready.",
+    "Source": "CofD 291",
+    "Type": "Mental Conditions"
   },
   "stoic": {
-    "agoraphobic": "Stoic",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Distance and emotional guard ease lies, but inhibit perspective and passion.",
-    "ptc_2e_306": "CTL 2e 345",
-    "type": "Mental Conditions"
+    "Name": "Stoic",
+    "Persistent": false,
+    "Effect": "Distance and emotional guard ease lies, but inhibit perspective and passion.",
+    "Source": "CTL 2e 345",
+    "Type": "Mental Conditions"
   },
   "strained": {
-    "agoraphobic": "Strained",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've held back the shock of witnessing supernal sorcery, but the pressure remains.",
-    "ptc_2e_306": "MTA 2e 318",
-    "type": "Mental Conditions"
+    "Name": "Strained",
+    "Persistent": false,
+    "Effect": "You've held back the shock of witnessing supernal sorcery, but the pressure remains.",
+    "Source": "MTA 2e 318",
+    "Type": "Mental Conditions"
   },
   "swooned": {
-    "agoraphobic": "Swooned",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're charmed or bedazzled by a particular person.",
-    "ptc_2e_306": "CofD 291",
-    "type": "Mental Conditions"
+    "Name": "Swooned",
+    "Persistent": false,
+    "Effect": "You're charmed or bedazzled by a particular person.",
+    "Source": "CofD 291",
+    "Type": "Mental Conditions"
   },
   "withdrawn": {
-    "agoraphobic": "Withdrawn",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Doubt and insecurity drive you inward, sapping the will to action.",
-    "ptc_2e_306": "CTL 2e 346",
-    "type": "Mental Conditions"
+    "Name": "Withdrawn",
+    "Persistent": false,
+    "Effect": "Doubt and insecurity drive you inward, sapping the will to action.",
+    "Source": "CTL 2e 346",
+    "Type": "Mental Conditions"
   },
   "arm_disability": {
-    "agoraphobic": "Arm Disability",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "At least one arm is either chronically or permanently nonfunctional.",
-    "ptc_2e_306": "HL 57",
-    "type": "Physical Conditions"
+    "Name": "Arm Disability",
+    "Persistent": true,
+    "Effect": "At least one arm is either chronically or permanently nonfunctional.",
+    "Source": "HL 57",
+    "Type": "Physical Conditions"
   },
   "blind": {
-    "agoraphobic": "Blind",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "You've lost or can't exercise your sense of sight.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Physical Conditions"
+    "Name": "Blind",
+    "P: "○",
+    "Effect": "You've lost or can't exercise your sense of sight.",
+    "Source": "CofD 288",
+    "Type": "Physical Conditions"
   },
   "chronic_agony": {
-    "agoraphobic": "Chronic Agony",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "You're vulnerable to incapacitating pain spells.",
-    "ptc_2e_306": "HL 57",
-    "type": "Physical Conditions"
+    "Name": "Chronic Agony",
+    "Persistent": true,
+    "Effect": "You're vulnerable to incapacitating pain spells.",
+    "Source": "HL 57",
+    "Type": "Physical Conditions"
   },
   "chronic_sickness": {
-    "agoraphobic": "Chronic Sickness",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Sickness or poison lingers in you, aggravated by stress.",
-    "ptc_2e_306": "HL 57",
-    "type": "Physical Conditions"
+    "Name": "Chronic Sickness",
+    "Persistent": true,
+    "Effect": "Sickness or poison lingers in you, aggravated by stress.",
+    "Source": "HL 57",
+    "Type": "Physical Conditions"
   },
   "deaf": {
-    "agoraphobic": "Deaf",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Your hearing is severely impaired.",
-    "ptc_2e_306": "HL 58",
-    "type": "Physical Conditions"
+    "Name": "Deaf",
+    "Persistent": true,
+    "Effect": "Your hearing is severely impaired.",
+    "Source": "HL 58",
+    "Type": "Physical Conditions"
   },
   "disabled": {
-    "agoraphobic": "Disabled",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "You can't effectively walk on your own power.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Physical Conditions"
+    "Name": "Disabled",
+    "P: "○",
+    "Effect": "You can't effectively walk on your own power.",
+    "Source": "CofD 288",
+    "Type": "Physical Conditions"
   },
   "drained": {
-    "agoraphobic": "Drained",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're weak and woozy from blood loss.",
-    "ptc_2e_306": "VTR 2e 303",
-    "type": "Physical Conditions"
+    "Name": "Drained",
+    "Persistent": false,
+    "Effect": "You're weak and woozy from blood loss.",
+    "Source": "VTR 2e 303",
+    "Type": "Physical Conditions"
   },
   "easy_prey": {
-    "agoraphobic": "Easy Prey",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've left a strong trail for a hunter to follow and exploit.",
-    "ptc_2e_306": "WTF 2e 307",
-    "type": "Physical Conditions"
+    "Name": "Easy Prey",
+    "Persistent": false,
+    "Effect": "You've left a strong trail for a hunter to follow and exploit.",
+    "Source": "WTF 2e 307",
+    "Type": "Physical Conditions"
   },
   "energized": {
-    "agoraphobic": "Energized",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "A chemically induced rush.",
-    "ptc_2e_306": "HD 123",
-    "type": "Physical Conditions"
+    "Name": "Energized",
+    "Persistent": false,
+    "Effect": "A chemically induced rush.",
+    "Source": "HD 123",
+    "Type": "Physical Conditions"
   },
   "exhausted": {
-    "agoraphobic": "Exhausted",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're run ragged on the edge of unconsciousness.",
-    "ptc_2e_306": "WTF 2e 307",
-    "type": "Physical Conditions"
+    "Name": "Exhausted",
+    "Persistent": false,
+    "Effect": "You're run ragged on the edge of unconsciousness.",
+    "Source": "WTF 2e 307",
+    "Type": "Physical Conditions"
   },
   "fatigued": {
-    "agoraphobic": "Fatigued",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've pushed yourself too far, and your fatigue hangs over you constantly.",
-    "ptc_2e_306": "PTC 2e 309",
-    "type": "Physical Conditions"
+    "Name": "Fatigued",
+    "Persistent": false,
+    "Effect": "You've pushed yourself too far, and your fatigue hangs over you constantly.",
+    "Source": "PTC 2e 309",
+    "Type": "Physical Conditions"
   },
   "fragile": {
-    "agoraphobic": "Fragile",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're using equipment not sturdy enough to endure continued use.",
-    "ptc_2e_306": "CofD 102",
-    "type": "Physical Conditions"
+    "Name": "Fragile",
+    "Persistent": false,
+    "Effect": "You're using equipment not sturdy enough to endure continued use.",
+    "Source": "CofD 102",
+    "Type": "Physical Conditions"
   },
   "intoxicated": {
-    "agoraphobic": "Intoxicated",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Your discretion is dulled by altered consciousness.",
-    "ptc_2e_306": "VTR 2e 304",
-    "type": "Physical Conditions"
+    "Name": "Intoxicated",
+    "Persistent": false,
+    "Effect": "Your discretion is dulled by altered consciousness.",
+    "Source": "VTR 2e 304",
+    "Type": "Physical Conditions"
   },
   "invisible_predator": {
-    "agoraphobic": "Invisible Predator",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've skulked on the hunt, leaving nary a trace of your approach.",
-    "ptc_2e_306": "WTF 2e 308",
-    "type": "Physical Conditions"
+    "Name": "Invisible Predator",
+    "Persistent": false,
+    "Effect": "You've skulked on the hunt, leaving nary a trace of your approach.",
+    "Source": "WTF 2e 308",
+    "Type": "Physical Conditions"
   },
   "leg_disability": {
-    "agoraphobic": "Leg Disability",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "At least one leg is either chronically or permanently nonfunctional.",
-    "ptc_2e_306": "HL 58",
-    "type": "Physical Conditions"
+    "Name": "Leg Disability",
+    "Persistent": true,
+    "Effect": "At least one leg is either chronically or permanently nonfunctional.",
+    "Source": "HL 58",
+    "Type": "Physical Conditions"
   },
   "lethargic": {
-    "agoraphobic": "Lethargic",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Fatigue tires you so heavily you cannot muster Willpower.",
-    "ptc_2e_306": "VTR 2e 305",
-    "type": "Physical Conditions"
+    "Name": "Lethargic",
+    "Persistent": false,
+    "Effect": "Fatigue tires you so heavily you cannot muster Willpower.",
+    "Source": "VTR 2e 305",
+    "Type": "Physical Conditions"
   },
   "mute": {
-    "agoraphobic": "Mute",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "You cannot speak or use your voice.",
-    "ptc_2e_306": "CofD 290",
-    "type": "Physical Conditions"
+    "Name": "Mute",
+    "P: "○",
+    "Effect": "You cannot speak or use your voice.",
+    "Source": "CofD 290",
+    "Type": "Physical Conditions"
   },
   "numb": {
-    "agoraphobic": "Numb",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Detachment from the world dulls the feeling in your body.",
-    "ptc_2e_306": "CTL 2e 343",
-    "type": "Physical Conditions"
+    "Name": "Numb",
+    "Persistent": true,
+    "Effect": "Detachment from the world dulls the feeling in your body.",
+    "Source": "CTL 2e 343",
+    "Type": "Physical Conditions"
   },
   "recovery": {
-    "agoraphobic": "Recovery",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "The pain and weakness of breaking a heavy chemical dependency.",
-    "ptc_2e_306": "HD 123",
-    "type": "Physical Conditions"
+    "Name": "Recovery",
+    "Persistent": true,
+    "Effect": "The pain and weakness of breaking a heavy chemical dependency.",
+    "Source": "HD 123",
+    "Type": "Physical Conditions"
   },
   "scarred": {
-    "agoraphobic": "Scarred",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're rattled and volatile from a sudden assault.",
-    "ptc_2e_306": "VTR 2e 305",
-    "type": "Physical Conditions"
+    "Name": "Scarred",
+    "Persistent": false,
+    "Effect": "You're rattled and volatile from a sudden assault.",
+    "Source": "VTR 2e 305",
+    "Type": "Physical Conditions"
   },
   "sickly": {
-    "agoraphobic": "Sickly",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Disease is making its way through your system.",
-    "ptc_2e_306": "DSG 105",
-    "type": "Physical Conditions"
+    "Name": "Sickly",
+    "Persistent": false,
+    "Effect": "Disease is making its way through your system.",
+    "Source": "DSG 105",
+    "Type": "Physical Conditions"
   },
   "stumbled": {
-    "agoraphobic": "Stumbled",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "A complication has arisen to interrupt an ongoing project.",
-    "ptc_2e_306": "WTF 2e 311",
-    "type": "Physical Conditions"
+    "Name": "Stumbled",
+    "Persistent": false,
+    "Effect": "A complication has arisen to interrupt an ongoing project.",
+    "Source": "WTF 2e 311",
+    "Type": "Physical Conditions"
   },
   "untraceable": {
-    "agoraphobic": "Untraceable",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've thoroughly covered any trail a hunter might use to find you.",
-    "ptc_2e_306": "WTF 2e 311",
-    "type": "Physical Conditions"
+    "Name": "Untraceable",
+    "Persistent": false,
+    "Effect": "You've thoroughly covered any trail a hunter might use to find you.",
+    "Source": "WTF 2e 311",
+    "Type": "Physical Conditions"
   },
   "volatile": {
-    "agoraphobic": "Volatile",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You're using unstable equipment prone to backfiring.",
-    "ptc_2e_306": "CofD 102",
-    "type": "Physical Conditions"
+    "Name": "Volatile",
+    "Persistent": false,
+    "Effect": "You're using unstable equipment prone to backfiring.",
+    "Source": "CofD 102",
+    "Type": "Physical Conditions"
   },
   "bonded": {
-    "agoraphobic": "Bonded",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "You've established trust with a particular animal.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Social Conditions"
+    "Name": "Bonded",
+    "Persistent": false,
+    "Effect": "You've established trust with a particular animal.",
+    "Source": "CofD 288",
+    "Type": "Social Conditions"
   },
   "connected": {
-    "agoraphobic": "Connected",
-    "": "○",
-    "you_avoid_open_spaces_and_crowds.": "You've made inroads with a particular group of people.",
-    "ptc_2e_306": "CofD 288",
-    "type": "Social Conditions"
+    "Name": "Connected",
+    "P: "○",
+    "Effect": "You've made inroads with a particular group of people.",
+    "Source": "CofD 288",
+    "Type": "Social Conditions"
   },
   "embarrassing_secret": {
-    "agoraphobic": "Embarrassing Secret",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "There are skeletons in your closet to exploit.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Social Conditions"
+    "Name": "Embarrassing Secret",
+    "Persistent": false,
+    "Effect": "There are skeletons in your closet to exploit.",
+    "Source": "CofD 289",
+    "Type": "Social Conditions"
   },
   "hunted": {
-    "agoraphobic": "Hunted",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Dangerous enemies have your trail.",
-    "ptc_2e_306": "DTD 119",
-    "type": "Social Conditions"
+    "Name": "Hunted",
+    "Persistent": true,
+    "Effect": "Dangerous enemies have your trail.",
+    "Source": "DTD 119",
+    "Type": "Social Conditions"
   },
   "leveraged": {
-    "agoraphobic": "Leveraged",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "A particular character is holding something over your head to compel you.",
-    "ptc_2e_306": "CofD 289",
-    "type": "Social Conditions"
+    "Name": "Leveraged",
+    "Persistent": false,
+    "Effect": "A particular character is holding something over your head to compel you.",
+    "Source": "CofD 289",
+    "Type": "Social Conditions"
   },
   "notoriety": {
-    "agoraphobic": "Notoriety",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Odious blame follows you, whether true or not.",
-    "ptc_2e_306": "CofD 290",
-    "type": "Social Conditions"
+    "Name": "Notoriety",
+    "Persistent": false,
+    "Effect": "Odious blame follows you, whether true or not.",
+    "Source": "CofD 290",
+    "Type": "Social Conditions"
   },
   "tasked": {
-    "agoraphobic": "Tasked",
-    "": "",
-    "you_avoid_open_spaces_and_crowds.": "Your duty-bound allies have issued you a serious task you must carry out.",
-    "ptc_2e_306": "VTR 2e 307",
-    "type": "Social Conditions"
+    "Name": "Tasked",
+    "Persistent": false,
+    "Effect": "Your duty-bound allies have issued you a serious task you must carry out.",
+    "Source": "VTR 2e 307",
+    "Type": "Social Conditions"
   },
   "watched": {
-    "agoraphobic": "Watched",
-    "": "●",
-    "you_avoid_open_spaces_and_crowds.": "Someone is stalking you, suspicious of an unnatural secret you hide.",
-    "ptc_2e_306": "PTC 2e 312",
-    "type": "Social Conditions"
+    "Name": "Watched",
+    "Persistent": true,
+    "Effect": "Someone is stalking you, suspicious of an unnatural secret you hide.",
+    "Source": "PTC 2e 312",
+    "Type": "Social Conditions"
   }
 }

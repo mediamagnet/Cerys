@@ -15,9 +15,7 @@ String helpCommandGen(String commandName, String description, { String? addition
   final buffer = StringBuffer();
   var cfg;
 
-  var prefix = cfg['bot']['prefix'];
-
-  buffer.write('**${prefix}${commandName}**');
+  buffer.write('**${cfg['Bot']['Prefix']}${commandName}**');
 
   if (additionalInfo != null) {
     buffer.write(' `$additionalInfo`');
@@ -54,14 +52,11 @@ Future wodScrape(String page) async {
     }
 
     var rowMap = <String, String>{};
-
-
-
     if (section != '') {
       rowMap['Type'] = section;
     }
 
-    print(headerMap);
+    // print(headerMap);
 
     for (var item in row.children.asMap().entries) {
       if (item.value.text.trim() != '') {

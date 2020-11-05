@@ -8,12 +8,15 @@ import 'dart:math' show Random;
 import 'dart:io' show Process, ProcessInfo, pid, sleep;
 import 'utils.dart' as utils;
 import 'codex.dart' as codex;
+import 'package:cron/cron.dart';
 
 
 var ownerID;
 // ignore: prefer_single_quotes
 
 var launch = DateTime.now();
+
+var prefix;
 
 extension StringExtension on String {
   String capitalize() {
@@ -22,25 +25,40 @@ extension StringExtension on String {
 }
 
 Future main(List<String> arguments) async {
+  final cron = Cron();
   FilesystemConfigLoader.use();
   var cfg;
   try {
     cfg = await loadConfig('config.toml');
     print(cfg['Bot']['ID']);
     ownerID = cfg['Owner']['ID'];
+    prefix = cfg['Bot']['Prefix'];
 
     final bot = Nyxx(cfg['Bot']['Token']!);
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
-
       bot.setPresence(PresenceBuilder.of(game: Activity.of(
-          "with The God Machine's Gears", type: ActivityType.game,
+          'Cerys v0.0.1', type: ActivityType.streaming,
           url: 'https://github.com/mediamagnet/cerys')));
+
+      cron.schedule(Schedule.parse('15,45 * * * *'), () async  {
+        bot.setPresence(PresenceBuilder.of(game: Activity.of(
+            "with The God Machine's Gears", type: ActivityType.game,
+            url: 'https://github.com/mediamagnet/cerys')));
+      });
+      cron.schedule(Schedule.parse('00,30 * * * *'), () async {
+        bot.setPresence(PresenceBuilder.of(game: Activity.of(
+            '${cfg['Bot']['Prefix']}help', type: ActivityType.listening,
+            url: 'https://github.com/mediamagnet/cerys')));
+      });
     });
 
-
-
+    bot.onMessageReceived.listen((MessageReceivedEvent e){
+      if (e.message.content.contains('<@!768908244008960011>')) {
+        e.message.createReaction(UnicodeEmoji(':heart:'));
+      }
+    });
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
@@ -50,7 +68,8 @@ Future main(List<String> arguments) async {
         ..registerSubCommand('exploit', codex.exploitCommand)
         ..registerSubCommand('demon forms', codex.demonFormsCommand)
         ..registerSubCommand('cruac', codex.cruacCommand)
-        ..registerSubCommand('gifts', codex.giftCommand))
+        ..registerSubCommand('gifts', codex.giftCommand)
+        ..registerSubCommand('condition', codex.conditionCommand))
       ..registerCommand('test', testCommand)
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
@@ -63,18 +82,8 @@ Future main(List<String> arguments) async {
 }
 
 Future<void> helpCommand(CommandContext ctx, String content) async {
-  // Assign method to variable for shorter name
-  const helpGen = utils.helpCommandGen;
 
-  // Write zero-width character to skip first line where nick is
-  final buffer = StringBuffer('‎\n');
-
-  buffer.write(helpGen('info', 'sends basic info about bot'));
-  buffer.write(helpGen('ping', 'sends current bot latency'));
-  buffer.write(helpGen('help', 'this command'));
-  buffer.write(helpGen('shutdown', 'Shuts down bot'));
-
-  await ctx.reply(content: buffer.toString());
+  await ctx.reply(content: "I can't do that yet");
 }
 
 Future<void> pingCommand(CommandContext ctx, String content) async {
@@ -162,9 +171,10 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
 }
 
 Future<void> shutdownCommand(CommandContext ctx, String content) async {
+  await ctx.message.delete();
+  await ctx.reply(content: "I guess... if that's what you want.");
   Process.killPid(pid);
 }
-
 
 Future<void> testCommand(CommandContext ctx, String content) async {
 

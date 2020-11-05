@@ -7,12 +7,12 @@
     "description": "Declare yourself, and up to your Presence in allies beside you, a rightful guest, unharried by protection from intruders.",
     "book": "CTL 2e 128",
     "type": "Contracts of the Crown",
-    "other kiths": {
-      "beast": {
+    "alternates": {
+      "alternate 1": {
         "kith": "Beast",
         "effect": "You may contest Presence + Intimidation + Wyrd vs Composure + Tolerance to provoke a Fugue in the victim.",
       },
-      "fairest": {
+      "alternate 2": {
         "kith": "Fairest",
         "effect": "Add Glamour to name a conditional trigger that hangs for a day.",
       }
