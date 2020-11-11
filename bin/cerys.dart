@@ -73,7 +73,8 @@ Future main(List<String> arguments) async {
       ..registerCommand('test', testCommand)
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
-      ..registerCommand('ping', pingCommand);
+      ..registerCommand('ping', pingCommand)
+      ..registerCommand('moon', moonCommand);
 
   } catch (e) {
     print(e);
@@ -232,6 +233,15 @@ Future<void> testCommand(CommandContext ctx, String content) async {
   await ctx.message.delete();
   await ctx.reply(embed: embed);
 
+}
+
+Future<void> moonCommand(CommandContext ctx, String content) async {
+  var cont = content.replaceAll('${prefix}moon ', '');
+  if (cont == '') {
+    await ctx.reply(content: 'https://wttr.in/moon.png');
+  } else {
+    await ctx.reply(content: 'https://wttr.in/moon@${cont}.png');
+  }
 }
 
 Future<bool> checkForAdmin(CommandContext context) async {

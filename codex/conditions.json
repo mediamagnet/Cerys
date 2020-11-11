@@ -1,462 +1,462 @@
 {
   "agoraphobic": {
     "Name": "Agoraphobic",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You avoid open spaces and crowds.",
     "Source": "PTC 2e 306",
     "Type": "Mental Conditions"
   },
   "addled": {
     "Name": "Addled",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Your memories are jumbled and confused.",
     "Source": "GTS 2e 299",
     "Type": "Mental Conditions"
   },
   "amnesia": {
     "Name": "Amnesia",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "You've lost a large swath of memory.",
     "Source": "CofD 288",
     "Type": "Mental Conditions"
   },
   "broken": {
     "Name": "Broken",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Your will is broken and you back down from everything.",
     "Source": "CofD 288",
     "Type": "Mental Conditions"
   },
   "captivated": {
     "Name": "Captivated",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're heavily preoccupied with something and can't split your attention.",
     "Source": "DTD 211",
     "Type": "Mental Conditions"
   },
   "confused": {
     "Name": "Confused",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You can't think straight.",
     "Source": "VTR 2e 302",
     "Type": "Mental Conditions"
   },
   "cowed": {
     "Name": "Cowed",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Someone has weakened you through a display of dominance.",
     "Source": "WTF 2e 307",
     "Type": "Mental Conditions"
   },
   "delusional": {
     "Name": "Delusional",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Paranoid delusions dominate your behavior.",
     "Source": "VTR 2e 302",
     "Type": "Mental Conditions"
   },
   "demoralized": {
     "Name": "Demoralized",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Failure dampens your fighting initiative.",
     "Source": "WTF 2e 307",
     "Type": "Mental Conditions"
   },
   "detached": {
     "Name": "Detached",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "You've run with occult circles for so long you've forgotten how to interact with humans.",
     "Source": "HD 123",
     "Type": "Mental Conditions"
   },
   "deprived": {
     "Name": "Deprived",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "You're weakened by an unfed addiction.",
     "Source": "CofD 288",
     "Type": "Mental Conditions"
   },
   "disoriented": {
     "Name": "Disoriented",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've lost equilibrium and need an opportunity to recenter.",
     "Source": "DTD 211",
     "Type": "Mental Conditions"
   },
   "dissociation": {
     "Name": "Dissociation",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Surreality plagues you with doubts of your own experiences.",
     "Source": "CTL 2e 336",
     "Type": "Mental Conditions"
   },
   "distracted": {
     "Name": "Distracted",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're buffeted from all sides, splitting your attention terribly.",
     "Source": "VTR 2e 302",
     "Type": "Mental Conditions"
   },
   "doubtful": {
     "Name": "Doubtful",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "You've lost confidence in all but your most secure actions.",
     "Source": "HMR 147",
     "Type": "Mental Conditions"
   },
   "emboldened": {
     "Name": "Emboldened",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "An uninhibited atmosphere makes you impulsive and prone to temptation.",
     "Source": "HMR 150",
     "Type": "Mental Conditions"
   },
   "faith": {
     "Name": "Faith",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Your trust in the next world can be exploited by angelic forces.",
     "Source": "DSG 81",
     "Type": "Mental Conditions"
   },
   "frightened": {
     "Name": "Frightened",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're terrified and moved to panic and flee.",
     "Source": "VTR 2e 304",
     "Type": "Mental Conditions"
   },
   "fugue": {
     "Name": "Fugue",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "You've shied away from trauma by shutting out the experience.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "guilty": {
     "Name": "Guilty",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Feelings of remorse leave you emotionally vulnerable.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "informed": {
     "Name": "Informed",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're well equipped to tackle a given subject.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "inspired": {
     "Name": "Inspired",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "The spirit moves you to confident action.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "lost": {
     "Name": "Lost",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've lost your sense of place and need to reorient.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "lost_tracker": {
     "Name": "Lost Tracker",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Frustrations on a hunt leave your tracking skills sloppy and halfhearted.",
     "Source": "WTF 2e 308",
     "Type": "Mental Conditions"
   },
   "madness": {
     "Name": "Madness",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Unnatural horror has shattered your ability to process life.",
     "Source": "CofD 289",
     "Type": "Mental Conditions"
   },
   "obsession": {
     "Name": "Obsession",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "Something controls your attention and distracts from all else.",
     "Source": "CofD 290",
     "Type": "Mental Conditions"
   },
   "shaken": {
     "Name": "Shaken",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're shocked or deeply rattled, unsteadying your hand.",
     "Source": "CofD 290",
     "Type": "Mental Conditions"
   },
   "sleepwalking": {
     "Name": "Sleepwalking",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Sleep and wakefulness blur, and you suffer from lost time and poor recollection.",
     "Source": "CTL 2e 344",
     "Type": "Mental Conditions"
   },
   "spooked": {
     "Name": "Spooked",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Otherworldly wonder moves you unwisely.",
     "Source": "CofD 291",
     "Type": "Mental Conditions"
   },
   "steadfast": {
     "Name": "Steadfast",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Your resolve to act is steeled and ready.",
     "Source": "CofD 291",
     "Type": "Mental Conditions"
   },
   "stoic": {
     "Name": "Stoic",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Distance and emotional guard ease lies, but inhibit perspective and passion.",
     "Source": "CTL 2e 345",
     "Type": "Mental Conditions"
   },
   "strained": {
     "Name": "Strained",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've held back the shock of witnessing supernal sorcery, but the pressure remains.",
     "Source": "MTA 2e 318",
     "Type": "Mental Conditions"
   },
   "swooned": {
     "Name": "Swooned",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're charmed or bedazzled by a particular person.",
     "Source": "CofD 291",
     "Type": "Mental Conditions"
   },
   "withdrawn": {
     "Name": "Withdrawn",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Doubt and insecurity drive you inward, sapping the will to action.",
     "Source": "CTL 2e 346",
     "Type": "Mental Conditions"
   },
   "arm_disability": {
     "Name": "Arm Disability",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "At least one arm is either chronically or permanently nonfunctional.",
     "Source": "HL 57",
     "Type": "Physical Conditions"
   },
   "blind": {
     "Name": "Blind",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "You've lost or can't exercise your sense of sight.",
     "Source": "CofD 288",
     "Type": "Physical Conditions"
   },
   "chronic_agony": {
     "Name": "Chronic Agony",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "You're vulnerable to incapacitating pain spells.",
     "Source": "HL 57",
     "Type": "Physical Conditions"
   },
   "chronic_sickness": {
     "Name": "Chronic Sickness",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Sickness or poison lingers in you, aggravated by stress.",
     "Source": "HL 57",
     "Type": "Physical Conditions"
   },
   "deaf": {
     "Name": "Deaf",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Your hearing is severely impaired.",
     "Source": "HL 58",
     "Type": "Physical Conditions"
   },
   "disabled": {
     "Name": "Disabled",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "You can't effectively walk on your own power.",
     "Source": "CofD 288",
     "Type": "Physical Conditions"
   },
   "drained": {
     "Name": "Drained",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're weak and woozy from blood loss.",
     "Source": "VTR 2e 303",
     "Type": "Physical Conditions"
   },
   "easy_prey": {
     "Name": "Easy Prey",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've left a strong trail for a hunter to follow and exploit.",
     "Source": "WTF 2e 307",
     "Type": "Physical Conditions"
   },
   "energized": {
     "Name": "Energized",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "A chemically induced rush.",
     "Source": "HD 123",
     "Type": "Physical Conditions"
   },
   "exhausted": {
     "Name": "Exhausted",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're run ragged on the edge of unconsciousness.",
     "Source": "WTF 2e 307",
     "Type": "Physical Conditions"
   },
   "fatigued": {
     "Name": "Fatigued",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've pushed yourself too far, and your fatigue hangs over you constantly.",
     "Source": "PTC 2e 309",
     "Type": "Physical Conditions"
   },
   "fragile": {
     "Name": "Fragile",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're using equipment not sturdy enough to endure continued use.",
     "Source": "CofD 102",
     "Type": "Physical Conditions"
   },
   "intoxicated": {
     "Name": "Intoxicated",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Your discretion is dulled by altered consciousness.",
     "Source": "VTR 2e 304",
     "Type": "Physical Conditions"
   },
   "invisible_predator": {
     "Name": "Invisible Predator",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've skulked on the hunt, leaving nary a trace of your approach.",
     "Source": "WTF 2e 308",
     "Type": "Physical Conditions"
   },
   "leg_disability": {
     "Name": "Leg Disability",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "At least one leg is either chronically or permanently nonfunctional.",
     "Source": "HL 58",
     "Type": "Physical Conditions"
   },
   "lethargic": {
     "Name": "Lethargic",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Fatigue tires you so heavily you cannot muster Willpower.",
     "Source": "VTR 2e 305",
     "Type": "Physical Conditions"
   },
   "mute": {
     "Name": "Mute",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "You cannot speak or use your voice.",
     "Source": "CofD 290",
     "Type": "Physical Conditions"
   },
   "numb": {
     "Name": "Numb",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Detachment from the world dulls the feeling in your body.",
     "Source": "CTL 2e 343",
     "Type": "Physical Conditions"
   },
   "recovery": {
     "Name": "Recovery",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "The pain and weakness of breaking a heavy chemical dependency.",
     "Source": "HD 123",
     "Type": "Physical Conditions"
   },
   "scarred": {
     "Name": "Scarred",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're rattled and volatile from a sudden assault.",
     "Source": "VTR 2e 305",
     "Type": "Physical Conditions"
   },
   "sickly": {
     "Name": "Sickly",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Disease is making its way through your system.",
     "Source": "DSG 105",
     "Type": "Physical Conditions"
   },
   "stumbled": {
     "Name": "Stumbled",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "A complication has arisen to interrupt an ongoing project.",
     "Source": "WTF 2e 311",
     "Type": "Physical Conditions"
   },
   "untraceable": {
     "Name": "Untraceable",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've thoroughly covered any trail a hunter might use to find you.",
     "Source": "WTF 2e 311",
     "Type": "Physical Conditions"
   },
   "volatile": {
     "Name": "Volatile",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You're using unstable equipment prone to backfiring.",
     "Source": "CofD 102",
     "Type": "Physical Conditions"
   },
   "bonded": {
     "Name": "Bonded",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "You've established trust with a particular animal.",
     "Source": "CofD 288",
     "Type": "Social Conditions"
   },
   "connected": {
     "Name": "Connected",
-    "P: "○",
+    "Persistent": "Under certian conditions",
     "Effect": "You've made inroads with a particular group of people.",
     "Source": "CofD 288",
     "Type": "Social Conditions"
   },
   "embarrassing_secret": {
     "Name": "Embarrassing Secret",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "There are skeletons in your closet to exploit.",
     "Source": "CofD 289",
     "Type": "Social Conditions"
   },
   "hunted": {
     "Name": "Hunted",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Dangerous enemies have your trail.",
     "Source": "DTD 119",
     "Type": "Social Conditions"
   },
   "leveraged": {
     "Name": "Leveraged",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "A particular character is holding something over your head to compel you.",
     "Source": "CofD 289",
     "Type": "Social Conditions"
   },
   "notoriety": {
     "Name": "Notoriety",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Odious blame follows you, whether true or not.",
     "Source": "CofD 290",
     "Type": "Social Conditions"
   },
   "tasked": {
     "Name": "Tasked",
-    "Persistent": false,
+    "Persistent": "no",
     "Effect": "Your duty-bound allies have issued you a serious task you must carry out.",
     "Source": "VTR 2e 307",
     "Type": "Social Conditions"
   },
   "watched": {
     "Name": "Watched",
-    "Persistent": true,
+    "Persistent": "yes",
     "Effect": "Someone is stalking you, suspicious of an unnatural secret you hide.",
     "Source": "PTC 2e 312",
     "Type": "Social Conditions"
