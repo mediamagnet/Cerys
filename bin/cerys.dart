@@ -236,11 +236,11 @@ Future<void> testCommand(CommandContext ctx, String content) async {
 }
 
 Future<void> moonCommand(CommandContext ctx, String content) async {
-  var cont = content.replaceAll('${prefix}moon ', '');
-  if (cont == '') {
+  var cont = content.split(' ');
+  if (cont.last == 'moon' || cont.last == '${prefix}moon') {
     await ctx.reply(content: 'https://wttr.in/moon.png');
   } else {
-    await ctx.reply(content: 'https://wttr.in/moon@${cont}.png');
+    await ctx.reply(content: 'https://wttr.in/moon@${cont.last}.png');
   }
 }
 
