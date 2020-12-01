@@ -56,7 +56,7 @@ Future main(List<String> arguments) async {
 
     bot.onMessageReceived.listen((MessageReceivedEvent e){
       if (e.message.content.contains('<@!768908244008960011>')) {
-        e.message.createReaction(UnicodeEmoji(':heart:'));
+        e.message.createReaction(UnicodeEmoji('❤'));
       }
     });
 
