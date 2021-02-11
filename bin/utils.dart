@@ -4,13 +4,13 @@ import 'package:http/http.dart';
 import 'package:html/parser.dart';
 import 'package:toml/loader/fs.dart';
 
-
 String get dartVersion {
   final platformVersion = Platform.version;
   return platformVersion.split('(').first;
 }
 
-String helpCommandGen(String commandName, String description, { String? additionalInfo }) {
+String helpCommandGen(String commandName, String description,
+    {String additionalInfo}) {
   FilesystemConfigLoader.use();
   final buffer = StringBuffer();
   var cfg;
@@ -29,7 +29,7 @@ String helpCommandGen(String commandName, String description, { String? addition
 Future wodScrape(String page) async {
   var client = Client();
   var path = page;
-  var response = await client.get('http://wodcodex.com/wiki/${path}_(2nd_Edition)');
+  var response = await client.get(Uri.parse('http://wodcodex.com/wiki/${path}_(2nd_Edition)'));
   var document = parse(response.body);
   var tables = document.getElementsByTagName('table');
   print(response.statusCode);
@@ -70,11 +70,11 @@ Future wodScrape(String page) async {
         // print('row: ${rowMap[0]}');
         while (n <= rowMap.length) {
           headerMap.add('col${n}');
-        };
+        }
+        ;
       }
     }
     itemMap[rowMap[headerMap[0]]] = rowMap;
-
   }
   // return itemMap;
   return jsonEncode(itemMap);

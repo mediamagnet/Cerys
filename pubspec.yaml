@@ -8,16 +8,16 @@ environment:
 
 dependencies:
 #  path: ^1.7.0
-  nyxx: ^1.0.0
-  nyxx_commander: ^1.0.0
-  dotenv: ^2.0.0
-  toml: ^0.6.0
-  dart_dice_parser: ^2.0.0
-  html: ^0.13.3+3
-  http: ^0.12.0
-  html_unescape: ^1.0.2
-  time: "^1.3.0"
-  cron: ^0.2.0
+  nyxx: ^1.1.0-dev
+  nyxx_commander: ^1.1.0-dev
+  dotenv: any
+  toml: any
+  dart_dice_parser: any
+  html: any 
+  http: any
+  html_unescape: any
+  time: any
+  cron: any
 
 
 dev_dependencies:

@@ -10,7 +10,6 @@ import 'utils.dart' as utils;
 import 'codex.dart' as codex;
 import 'package:cron/cron.dart';
 
-
 var ownerID;
 // ignore: prefer_single_quotes
 
@@ -34,27 +33,30 @@ Future main(List<String> arguments) async {
     ownerID = cfg['Owner']['ID'];
     prefix = cfg['Bot']['Prefix'];
 
-    final bot = Nyxx(cfg['Bot']['Token']!);
+    final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.allUnprivileged);
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
-      bot.setPresence(PresenceBuilder.of(game: Activity.of(
-          'Cerys v0.0.1', type: ActivityType.streaming,
-          url: 'https://github.com/mediamagnet/cerys')));
+      bot.setPresence(PresenceBuilder.of(
+          game: Activity.of('Cerys v0.0.1',
+              type: ActivityType.streaming,
+              url: 'https://github.com/mediamagnet/cerys')));
 
-      cron.schedule(Schedule.parse('15,45 * * * *'), () async  {
-        bot.setPresence(PresenceBuilder.of(game: Activity.of(
-            "with The God Machine's Gears", type: ActivityType.game,
-            url: 'https://github.com/mediamagnet/cerys')));
+      cron.schedule(Schedule.parse('15,45 * * * *'), () async {
+        bot.setPresence(PresenceBuilder.of(
+            game: Activity.of("with The God Machine's Gears",
+                type: ActivityType.game,
+                url: 'https://github.com/mediamagnet/cerys')));
       });
       cron.schedule(Schedule.parse('00,30 * * * *'), () async {
-        bot.setPresence(PresenceBuilder.of(game: Activity.of(
-            '${cfg['Bot']['Prefix']}help', type: ActivityType.listening,
-            url: 'https://github.com/mediamagnet/cerys')));
+        bot.setPresence(PresenceBuilder.of(
+            game: Activity.of('${cfg['Bot']['Prefix']}help',
+                type: ActivityType.listening,
+                url: 'https://github.com/mediamagnet/cerys')));
       });
     });
 
-    bot.onMessageReceived.listen((MessageReceivedEvent e){
+    bot.onMessageReceived.listen((MessageReceivedEvent e) {
       if (e.message.content.contains('<@!768908244008960011>')) {
         e.message.createReaction(UnicodeEmoji('❤'));
       }
@@ -75,7 +77,6 @@ Future main(List<String> arguments) async {
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand)
       ..registerCommand('moon', moonCommand);
-
   } catch (e) {
     print(e);
   }
@@ -83,8 +84,7 @@ Future main(List<String> arguments) async {
 }
 
 Future<void> helpCommand(CommandContext ctx, String content) async {
-
-  await ctx.reply(content: "I can't do that yet");
+  await ctx.sendMessage(content: "I can't do that yet");
 }
 
 Future<void> pingCommand(CommandContext ctx, String content) async {
@@ -107,12 +107,11 @@ Future<void> pingCommand(CommandContext ctx, String content) async {
     ..addField(
         name: 'Message roundup time', content: 'Pending...', inline: true);
 
-  final message = await ctx.reply(embed: embed);
+  final message = await ctx.sendMessage(embed: embed);
 
   embed
     ..replaceField(
         name: 'Message roundup time',
-
         content: '${stopwatch.elapsedMilliseconds} ms',
         inline: true);
 
@@ -131,7 +130,7 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
     })
     ..addFooter((footer) {
       footer.text =
-      'Nyxx 1.0.0 | Shard [${ctx.shardId + 1}] of [${ctx.client.shards}] | ${utils.dartVersion}';
+          'Nyxx 1.1.0-dev | Shard [${ctx.shardId + 1}] of [${ctx.client.shards}] | ${utils.dartVersion}';
     })
     ..color = color
     ..addField(
@@ -139,7 +138,7 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
     ..addField(
         name: 'DartVM memory usage',
         content:
-        '${(ProcessInfo.currentRss / 1024 / 1024).toStringAsFixed(2)} MB',
+            '${(ProcessInfo.currentRss / 1024 / 1024).toStringAsFixed(2)} MB',
         inline: true)
     ..addField(
         name: 'Created at', content: ctx.client.app.createdAt, inline: true)
@@ -159,26 +158,24 @@ Future<void> infoCommand(CommandContext ctx, String content) async {
         inline: true)
     ..addField(name: 'Shard count', content: ctx.client.shards, inline: true)
     ..addField(
-        name: 'Cached messages',
+        name: "Cached messages",
         content: ctx.client.channels
-            .find((item) => item is MessageChannel)
-            .cast<MessageChannel>()
-            .map((e) => e.messages.count)
+            .find((item) => item is TextChannel)
+            .cast<TextChannel>()
+            .map((e) => e.messageCache.count)
             .fold(0, (first, second) => (first as int) + second),
         inline: true);
-
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> shutdownCommand(CommandContext ctx, String content) async {
   await ctx.message.delete();
-  await ctx.reply(content: "I guess... if that's what you want.");
+  await ctx.sendMessage(content: "I guess... if that's what you want.");
   Process.killPid(pid);
 }
 
 Future<void> testCommand(CommandContext ctx, String content) async {
-
   var page = content.replaceAll('||test ', '').split(' ').first;
   var keyterm = content.replaceAll('||test ${page} ', '');
   var output = await utils.wodScrape(page);
@@ -199,54 +196,67 @@ Future<void> testCommand(CommandContext ctx, String content) async {
       ..addAuthor((author) {
         author.name = obj.values.elementAt(1);
         author.iconUrl =
-        'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
+            'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
         author.url = 'https://github.com/mediamagnet/cerys';
       })
       ..addFooter((footer) {
-        footer.text =
-        'Cerys v0.0.1';
+        footer.text = 'Cerys v0.0.1';
       })
       ..color = color
-      ..addField(name: '${obj.keys.elementAt(2)}:', content: obj.values.elementAt(2))
-      ..addField(name: '${obj.keys.elementAt(3)}:', content: obj.values.elementAt(3), inline: true)
-      ..addField(name: '${obj.keys.elementAt(0)}:', content: obj.values.elementAt(0), inline: true)
-      ..addField(name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
+      ..addField(
+          name: '${obj.keys.elementAt(2)}:', content: obj.values.elementAt(2))
+      ..addField(
+          name: '${obj.keys.elementAt(3)}:',
+          content: obj.values.elementAt(3),
+          inline: true)
+      ..addField(
+          name: '${obj.keys.elementAt(0)}:',
+          content: obj.values.elementAt(0),
+          inline: true)
+      ..addField(
+          name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
   } else {
     embed = EmbedBuilder()
       ..addAuthor((author) {
         author.name = obj.values.elementAt(0);
         author.iconUrl =
-        'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
+            'https://cdn.discordapp.com/emojis/269519439354003456.png?v=1';
         author.url = 'https://github.com/mediamagnet/cerys';
       })
       ..addFooter((footer) {
-        footer.text =
-        'Cerys v0.0.1';
+        footer.text = 'Cerys v0.0.1';
       })
       ..color = color
-      ..addField(name: '${obj.keys.elementAt(1)}:', content: obj.values.elementAt(1))
-      ..addField(name: '${obj.keys.elementAt(2)}:', content: obj.values.elementAt(2), inline: true)
-      ..addField(name: '${obj.keys.elementAt(3)}:', content: obj.values.elementAt(3), inline: true)
-      ..addField(name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
+      ..addField(
+          name: '${obj.keys.elementAt(1)}:', content: obj.values.elementAt(1))
+      ..addField(
+          name: '${obj.keys.elementAt(2)}:',
+          content: obj.values.elementAt(2),
+          inline: true)
+      ..addField(
+          name: '${obj.keys.elementAt(3)}:',
+          content: obj.values.elementAt(3),
+          inline: true)
+      ..addField(
+          name: '${obj.keys.elementAt(4)}:', content: obj.values.elementAt(4));
   }
 
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
-
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> moonCommand(CommandContext ctx, String content) async {
   var cont = content.split(' ');
   if (cont.last == 'moon' || cont.last == '${prefix}moon') {
-    await ctx.reply(content: 'https://wttr.in/moon.png');
+    await ctx.sendMessage(content: 'https://wttr.in/moon.png');
   } else {
-    await ctx.reply(content: 'https://wttr.in/moon@${cont.last}.png');
+    await ctx.sendMessage(content: 'https://wttr.in/moon@${cont.last}.png');
   }
 }
 
 Future<bool> checkForAdmin(CommandContext context) async {
   if (ownerID != null) {
-    return context.author!.id == ownerID;
+    return context.author.id == ownerID;
   }
 
   return false;
