@@ -33,12 +33,12 @@ Future main(List<String> arguments) async {
     ownerID = cfg['Owner']['ID'];
     prefix = cfg['Bot']['Prefix'];
 
-    final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.allUnprivileged);
+    final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.all);
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
       bot.setPresence(PresenceBuilder.of(
-          game: Activity.of('Cerys v0.0.1',
+          game: Activity.of('Cerys v2',
               type: ActivityType.streaming,
               url: 'https://github.com/mediamagnet/cerys')));
 

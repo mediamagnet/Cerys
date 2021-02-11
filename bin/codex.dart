@@ -41,7 +41,7 @@ Future<void> embedCommand(CommandContext ctx, String content) async {
     ..addField(name: 'Source', content: obj['Source']);
 
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> exploitCommand(CommandContext ctx, String content) async {
@@ -74,7 +74,7 @@ Future<void> exploitCommand(CommandContext ctx, String content) async {
     ..addField(name: 'Dice Pool:', content: obj['dice_pool'], inline: true)
     ..addField(name: 'Source', content: obj['source']);
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> cruacCommand(CommandContext ctx, String content) async {
@@ -108,7 +108,7 @@ Future<void> cruacCommand(CommandContext ctx, String content) async {
     ..addField(name: 'source', content: obj['source']);
 
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> demonFormsCommand(CommandContext ctx, String content) async {
@@ -140,7 +140,7 @@ Future<void> demonFormsCommand(CommandContext ctx, String content) async {
     ..addField(name: 'System', content: obj['system'])
     ..addField(name: 'Source', content: obj['source']);
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> giftCommand(CommandContext ctx, String content) async {
@@ -176,7 +176,7 @@ Future<void> giftCommand(CommandContext ctx, String content) async {
     ..addField(name: 'Reference', content: obj['reference']);
 
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
 
 Future<void> conditionCommand(CommandContext ctx, String content) async {
@@ -210,5 +210,5 @@ Future<void> conditionCommand(CommandContext ctx, String content) async {
     ..addField(name: 'Source', content: obj['Source']);
 
   await ctx.message.delete();
-  await ctx.reply(embed: embed);
+  await ctx.sendMessage(embed: embed);
 }
