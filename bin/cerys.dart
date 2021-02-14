@@ -1,6 +1,7 @@
 import 'package:nyxx/nyxx.dart';
 import 'package:nyxx_commander/commander.dart'
     show CommandContext, CommandGroup, Commander;
+import 'package:nyxx_interactions/interactions.dart';
 import 'package:toml/loader/fs.dart';
 import 'dart:async';
 import 'dart:convert';
@@ -16,6 +17,7 @@ var ownerID;
 var launch = DateTime.now();
 
 var prefix;
+
 
 extension StringExtension on String {
   String capitalize() {
@@ -34,6 +36,15 @@ Future main(List<String> arguments) async {
     prefix = cfg['Bot']['Prefix'];
 
     final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.all);
+
+    final interactions = Interactions(bot);
+
+    interactions.registerCommand(interactions.createCommand(
+      'moon', // The command name
+      'Get the current moon phase, or moon phase for a date.', // The commands description
+      [CommandArg(CommandArgType.string, 'Date', 'Date')],
+
+    ));
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
@@ -54,6 +65,12 @@ Future main(List<String> arguments) async {
                 type: ActivityType.listening,
                 url: 'https://github.com/mediamagnet/cerys')));
       });
+      interactions.sync();
+      interactions.onSlashCommand.listen((event) async{
+        if (event.interaction.name == 'moon') {
+            await event.reply(content: 'https://wttr.in/moon@${event.interaction.args['moon'].toString()}.png');
+        }
+      });
     });
 
     bot.onMessageReceived.listen((MessageReceivedEvent e) {
@@ -61,6 +78,8 @@ Future main(List<String> arguments) async {
         e.message.createReaction(UnicodeEmoji('❤'));
       }
     });
+    
+
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
