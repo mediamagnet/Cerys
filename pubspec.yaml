@@ -8,9 +8,9 @@ environment:
 
 dependencies:
 #  path: ^1.7.0
-  nyxx: ^1.1.0-dev.2
-  nyxx_commander: ^1.1.0-dev
-  nyxx_interactions: ^1.1.0-dev
+  nyxx: ^1.1.0-dev.3
+  nyxx_commander: ^1.1.0-dev.2
+  nyxx_interactions: ^1.1.0-dev.2
   dotenv: any
   toml: any
   dart_dice_parser: any

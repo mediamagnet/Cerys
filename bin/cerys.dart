@@ -37,14 +37,14 @@ Future main(List<String> arguments) async {
 
     final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.all);
 
-    final interactions = Interactions(bot);
-
-    interactions.registerCommand(interactions.createCommand(
-      'moon', // The command name
-      'Get the current moon phase, or moon phase for a date.', // The commands description
-      [CommandArg(CommandArgType.string, 'Date', 'Date')],
-
-    ));
+    final interactions = Interactions(bot)
+        ..registerHandler('moon',
+            'Get current moon phase for date',
+            [CommandArg(CommandArgType.string, 'date', 'date to pull moon phase for')],
+            // guild: 108344598018957312.toSnowflake(),
+            handler: (event) {
+          event.reply(content: 'blah', showSource: true);
+        });
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
@@ -66,11 +66,6 @@ Future main(List<String> arguments) async {
                 url: 'https://github.com/mediamagnet/cerys')));
       });
       interactions.sync();
-      interactions.onSlashCommand.listen((event) async{
-        if (event.interaction.name == 'moon') {
-            await event.reply(content: 'https://wttr.in/moon@${event.interaction.args['moon'].toString()}.png');
-        }
-      });
     });
 
     bot.onMessageReceived.listen((MessageReceivedEvent e) {
@@ -78,7 +73,8 @@ Future main(List<String> arguments) async {
         e.message.createReaction(UnicodeEmoji('❤'));
       }
     });
-    
+
+
 
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
