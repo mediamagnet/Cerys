@@ -280,7 +280,7 @@ Future<void> gurpsCommand(CommandContext ctx, String content) async {
   print(rolled.finalResult);
   await ctx.message.delete();
   await ctx.sendMessage(content: 'Rolled ${rolled.finalResult}');
-  await ctx.sendMessage(content: '${await dieFace(rolled.results[0].results[0])} ${await dieFace(rolled.results[0].results[1])} ${await dieFace(rolled.results[0].results[2])}');
+  await ctx.sendMessage(content: '${await dieFace(rolled.results[0].results[0])} ${await dieFace(rolled.results[0].results[1])} ${await dieFace(rolled.results[0].results[2])} ${rolled.rollNotation}');
 
 }
 
