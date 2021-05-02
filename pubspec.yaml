@@ -19,6 +19,7 @@ dependencies:
   html_unescape: any
   time: any
   cron: any
+  d20: <1.0.0
 
 
 dev_dependencies:

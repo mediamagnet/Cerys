@@ -10,6 +10,7 @@ import 'dart:io' show Process, ProcessInfo, pid, sleep;
 import 'utils.dart' as utils;
 import 'codex.dart' as codex;
 import 'package:cron/cron.dart';
+import 'package:d20/d20.dart';
 
 var ownerID;
 // ignore: prefer_single_quotes
@@ -91,6 +92,7 @@ Future main(List<String> arguments) async {
       ..registerCommand('help', helpCommand)
       ..registerCommand('info', infoCommand)
       ..registerCommand('ping', pingCommand)
+      ..registerCommand('gurps', gurpsCommand)
       ..registerCommand('moon', moonCommand);
   } catch (e) {
     print(e);
@@ -269,10 +271,50 @@ Future<void> moonCommand(CommandContext ctx, String content) async {
   }
 }
 
+Future<void> gurpsCommand(CommandContext ctx, String content) async {
+  final d20 = D20();
+  var cont = content.split(' ');
+  print(cont);
+  var rolled = d20.rollWithStatistics('3d6${cont.last}');
+  // print
+  print(rolled.finalResult);
+  await ctx.message.delete();
+  await ctx.sendMessage(content: 'Rolled ${rolled.finalResult}');
+  await ctx.sendMessage(content: '${await dieFace(rolled.results[0].results[0])} ${await dieFace(rolled.results[0].results[1])} ${await dieFace(rolled.results[0].results[2])}');
+
+}
+
 Future<bool> checkForAdmin(CommandContext context) async {
   if (ownerID != null) {
     return context.author.id == ownerID;
   }
 
   return false;
+}
+
+Future<String> dieFace(int face) async {
+  var newFace;
+  switch(face) {
+    case 1:
+     newFace = IGuildEmoji.fromId('838208311135830057').id;
+     break;
+    case 2:
+      newFace = IGuildEmoji.fromId('838208311114858526').id;
+      break;
+    case 3:
+      newFace = IGuildEmoji.fromId('838220704699908118').id;
+      break;
+    case 4:
+      newFace = IGuildEmoji.fromId('838220704699908118').id;
+      break;
+    case 5:
+      newFace = IGuildEmoji.fromId('838208311135830058').id;
+      break;
+    case 6:
+      newFace = IGuildEmoji.fromId('838208310930702349').id;
+      break;
+  }
+
+  print(newFace);
+  return '<:dice$face:$newFace>';
 }
