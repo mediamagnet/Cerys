@@ -19,7 +19,6 @@ var launch = DateTime.now();
 
 var prefix;
 
-
 extension StringExtension on String {
   String capitalize() {
     return '${this[0].toUpperCase()}${substring(1)}';
@@ -39,13 +38,13 @@ Future main(List<String> arguments) async {
     final bot = Nyxx(cfg['Bot']['Token'], GatewayIntents.all);
 
     final interactions = Interactions(bot)
-        ..registerHandler('moon',
-            'Get current moon phase for date',
-            [CommandArg(CommandArgType.string, 'date', 'date to pull moon phase for')],
-            // guild: 108344598018957312.toSnowflake(),
-            handler: (event) {
-          event.reply(content: 'blah', showSource: true);
-        });
+      ..registerHandler('moon', 'Get current moon phase for date', [
+        CommandArg(CommandArgType.string, 'date', 'date to pull moon phase for')
+      ],
+          // guild: 108344598018957312.toSnowflake(),
+          handler: (event) {
+        event.reply(content: 'blah', showSource: true);
+      });
 
     bot.onReady.listen((ReadyEvent e) {
       print('Connected to discord.');
@@ -74,9 +73,6 @@ Future main(List<String> arguments) async {
         e.message.createReaction(UnicodeEmoji('❤'));
       }
     });
-
-
-
 
     Commander(bot, prefix: cfg['Bot']['Prefix'])
       ..registerCommandGroup(CommandGroup(beforeHandler: checkForAdmin)
@@ -126,11 +122,10 @@ Future<void> pingCommand(CommandContext ctx, String content) async {
 
   final message = await ctx.sendMessage(embed: embed);
 
-  embed
-    ..replaceField(
-        name: 'Message roundup time',
-        content: '${stopwatch.elapsedMilliseconds} ms',
-        inline: true);
+  embed.replaceField(
+      name: 'Message roundup time',
+      content: '${stopwatch.elapsedMilliseconds} ms',
+      inline: true);
 
   await message.edit(embed: embed);
 }
@@ -273,15 +268,65 @@ Future<void> moonCommand(CommandContext ctx, String content) async {
 
 Future<void> gurpsCommand(CommandContext ctx, String content) async {
   final d20 = D20();
-  var cont = content.split(' ');
+  var cfg = await loadConfig('config.toml');
+  var cont = content.replaceAll('${cfg['Bot']['Prefix']}gurps ', '').split(',');
+  var rolled;
+  final color = DiscordColor.fromRgb(
+      Random().nextInt(255), Random().nextInt(255), Random().nextInt(255));
   print(cont);
-  var rolled = d20.rollWithStatistics('3d6${cont.last}');
-  // print
+  if (cont.first == '+0' || cont.first == '-0'){
+    rolled = d20.rollWithStatistics('3d6');
+  } else {
+    rolled = d20.rollWithStatistics('3d6${cont.first}');
+  }
   print(rolled.finalResult);
+  print(rolled.results[0].rollNotation);
+  print (rolled.results[0].results);
   await ctx.message.delete();
-  await ctx.sendMessage(content: 'Rolled ${rolled.finalResult}, ${rolled.rollNotation}');
-  await ctx.sendMessage(content: '${await dieFace(rolled.results[0].results[0])} ${await dieFace(rolled.results[0].results[1])} ${await dieFace(rolled.results[0].results[2])} ');
+  var embed = EmbedBuilder()
+    ..addAuthor((author) {
+      author.name = ctx.author.username;
+      author.iconUrl =
+      'http://fallenfocus.net/dice/dice-fire.png';
+      author.url = 'https://github.com/mediamagnet/cerys';
+    })
+    ..addFooter((footer) {
+      footer.text = 'Cerys v0.0.1';
+    })
+    ..color = color
+    ..addField(
+      name: 'Notation: ${rolled.rollNotation}',
+      content: 'Total: ${rolled.finalResult}')
+    ..addField(
+      name: 'Results:',
+      content: rolled.results[0].results)
+    ..addField(
+      name: 'Die 1:',
+      content: '${await dieFace(rolled.results[0].results[0])}',
+      inline: true)
+    ..addField(
+      name: 'Die 2:',
+      content: '${await dieFace(rolled.results[0].results[1])}',
+      inline: true)
+    ..addField(
+      name: 'Die 3:',
+      content: '${await dieFace(rolled.results[0].results[2])}',
+      inline: true)
+    ..addField(
+      name: 'Modifier:',
+      content: cont.first,
+      inline: true)
+    ..addField(
+      name: 'Notes',
+      content: cont.last);
 
+
+  await ctx.sendMessage(embed: embed);
+  /*await ctx.sendMessage(
+      content: 'Rolled ${rolled.finalResult}, ${rolled.rollNotation}');
+  await ctx.sendMessage(
+      content:
+          '${await dieFace(rolled.results[0].results[0])} ${await dieFace(rolled.results[0].results[1])} ${await dieFace(rolled.results[0].results[2])} ');*/
 }
 
 Future<bool> checkForAdmin(CommandContext context) async {
@@ -294,24 +339,24 @@ Future<bool> checkForAdmin(CommandContext context) async {
 
 Future<String> dieFace(int face) async {
   var newFace;
-  switch(face) {
+  switch (face) {
     case 1:
-     newFace = IGuildEmoji.fromId('838208311135830057').id;
-     break;
+      newFace = IGuildEmoji.fromId('838208311135830057').id; // https://cdn.discordapp.com/emojis/838208311135830057.png?v=1
+      break;
     case 2:
-      newFace = IGuildEmoji.fromId('838208311114858526').id;
+      newFace = IGuildEmoji.fromId('838208311114858526').id; // https://cdn.discordapp.com/emojis/838208311114858526.png?v=1
       break;
     case 3:
-      newFace = IGuildEmoji.fromId('838220704699908118').id;
+      newFace = IGuildEmoji.fromId('838208311144873984').id; // https://cdn.discordapp.com/emojis/838208311144873984.png?v=1
       break;
     case 4:
-      newFace = IGuildEmoji.fromId('838220704699908118').id;
+      newFace = IGuildEmoji.fromId('838220704699908118').id; // https://cdn.discordapp.com/emojis/838220704699908118.png?v=1
       break;
     case 5:
-      newFace = IGuildEmoji.fromId('838208311135830058').id;
+      newFace = IGuildEmoji.fromId('838208311135830058').id; // https://cdn.discordapp.com/emojis/838208311135830058.png?v=1
       break;
     case 6:
-      newFace = IGuildEmoji.fromId('838208310930702349').id;
+      newFace = IGuildEmoji.fromId('838208310930702349').id; // https://cdn.discordapp.com/emojis/838208310930702349.png?v=1
       break;
   }
 
